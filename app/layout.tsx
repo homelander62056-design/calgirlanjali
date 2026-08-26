@@ -24,10 +24,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices
 
 export const metadata: Metadata = {
   title: {
-    default: "cal girl pune | Professional Escort Services in Pune",
-    template: "%s | cal girl pune",
+    default: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
+    template: "%s | Call Girl Anjali",
   },
-  description: "Priya Escort Services provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+  description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+  keywords: "Pune escorts, call girls in Pune, Pune escort services, independent escorts Pune, VIP escorts Pune",
+  authors: [{ name: "Call Girl Anjali" }],
+  creator: "Call Girl Anjali",
+  publisher: "Call Girl Anjali",
   icons: {
     icon: [{ url: "/icon.png", type: "image/png" }],
     shortcut: ["/icon.png"],
@@ -38,17 +42,17 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "cal girl pune | Professional Escort Services in Pune",
-    description: "Priya Escort Services provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    title: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
+    description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
     url: siteUrl,
-    siteName: "cal girl pune",
+    siteName: "Call Girl Anjali",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "cal girl pune | Professional Escort Services in Pune",
-    description: "Priya Escort Services provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    title: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
+    description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
   },
   robots: {
     index: true,

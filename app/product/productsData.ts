@@ -1,5 +1,5 @@
 export interface ProductItem {
-  id: number;
+  id: string | number;
   name: string;
   city: string;
   title: string;
@@ -28,7 +28,7 @@ export interface ProductItem {
 export const initialProductsData: ProductItem[] = [
   // 1. Koregaon Park
   {
-    id: 1,
+    id: "ananya-sharma-pune-koregaon-park",
     name: "Ananya Sharma",
     city: "Pune / Koregaon Park",
     title: "Hey I am Ananya provide all service Real meet and video call in Koregaon Park 💋✨",
@@ -44,7 +44,7 @@ export const initialProductsData: ProductItem[] = [
   },
   // 2. Kalyani Nagar
   {
-    id: 2,
+    id: "pooja-hegde-pune-kalyani-nagar",
     name: "Pooja Hegde",
     city: "Pune / Kalyani Nagar",
     title: "VIP Companion & Model Service in Kalyani Nagar Pune 👑",
@@ -61,7 +61,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 3. Viman Nagar
   {
-    id: 3,
+    id: "priya-kulkarni-pune-viman-nagar",
     name: "Priya Kulkarni",
     city: "Pune / Viman Nagar",
     title: "Premium College Escort Service in Viman Nagar 🔥",
@@ -78,7 +78,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 4. Hinjewadi
   {
-    id: 4,
+    id: "sneha-joshi-pune-hinjewadi",
     name: "Sneha Joshi",
     city: "Pune / Hinjewadi",
     title: "Independent IT Park Escort in Hinjewadi Phase 1 & 2 🌸",
@@ -95,7 +95,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 5. Baner
   {
-    id: 5,
+    id: "priya-sen-pune-baner",
     name: "Priya Sen",
     city: "Pune / Baner",
     title: "Celebrity & Model Escort Service in Baner High Street 💃",
@@ -112,7 +112,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 6. Wakad
   {
-    id: 6,
+    id: "kavya-verma-pune-wakad",
     name: "Kavya Verma",
     city: "Pune / Wakad",
     title: "Luxury Escort & Dating Partner in Wakad Pune 💕",
@@ -129,7 +129,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 7. Kothrud
   {
-    id: 7,
+    id: "divya-deshmukh-pune-kothrud",
     name: "Divya Deshmukh",
     city: "Pune / Kothrud",
     title: "Independent Escort Companion in Kothrud ✨",
@@ -146,7 +146,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 8. Shivajinagar
   {
-    id: 8,
+    id: "neha-singh-pune-shivajinagar",
     name: "Neha Singh",
     city: "Pune / Shivajinagar",
     title: "High Profile Call Girl Service in Shivajinagar 🌹",
@@ -163,7 +163,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 9. Aundh
   {
-    id: 9,
+    id: "simran-gill-pune-aundh",
     name: "Simran Gill",
     city: "Pune / Aundh",
     title: "Independent Young Escort Girl in Aundh Pune 💋",
@@ -180,7 +180,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 10. Magarpatta City
   {
-    id: 10,
+    id: "aarti-patel-pune-magarpatta-city",
     name: "Aarti Patel",
     city: "Pune / Magarpatta City",
     title: "College Student Escort Service in Magarpatta Cybercity 🎓",
@@ -197,7 +197,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 11. Kharadi
   {
-    id: 11,
+    id: "ishita-roy-pune-kharadi",
     name: "Ishita Roy",
     city: "Pune / Kharadi",
     title: "Corporate Companion & VIP Escort in Kharadi IT Hub 💼",
@@ -214,7 +214,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 12. FC Road
   {
-    id: 12,
+    id: "meera-joshi-pune-fc-road",
     name: "Meera Joshi",
     city: "Pune / FC Road",
     title: "Independent Escort Service on FC Road Pune 🌺",
@@ -231,7 +231,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 13. Pune Camp
   {
-    id: 13,
+    id: "shreya-das-pune-camp",
     name: "Shreya Das",
     city: "Pune / Pune Camp",
     title: "Five Star Hotel Escort Partner in Pune Camp & MG Road ⭐",
@@ -248,7 +248,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 14. Senapati Bapat Road
   {
-    id: 14,
+    id: "natasha-malik-pune-senapati-bapat-road",
     name: "Natasha Malik",
     city: "Pune / Senapati Bapat Road",
     title: "Fashion Model Escort in Senapati Bapat Road Pune 💄",
@@ -265,7 +265,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 15. Balewadi
   {
-    id: 15,
+    id: "sonal-chauhan-pune-balewadi",
     name: "Sonal Chauhan",
     city: "Pune / Balewadi",
     title: "Independent Escort & Companion in Balewadi High Street 🌟",
@@ -282,7 +282,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 16. Bavdhan
   {
-    id: 16,
+    id: "nisha-agarwal-pune-bavdhan",
     name: "Nisha Agarwal",
     city: "Pune / Bavdhan",
     title: "Desi College Girl Escort in Bavdhan Pune 💖",
@@ -299,7 +299,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 17. Pimple Saudagar
   {
-    id: 17,
+    id: "tanvi-shah-pune-pimple-saudagar",
     name: "Tanvi Shah",
     city: "Pune / Pimple Saudagar",
     title: "High Class Escort in Pimple Saudagar Pune ✨",
@@ -316,7 +316,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 18. Pimpri Chinchwad
   {
-    id: 18,
+    id: "maya-deshmukh-pune-pimpri-chinchwad",
     name: "Maya Deshmukh",
     city: "Pune / Pimpri Chinchwad",
     title: "Luxury VIP Escort in Pimpri Chinchwad (PCMC) 🏰",
@@ -333,7 +333,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 19. Swargate
   {
-    id: 19,
+    id: "kriti-malhotra-pune-swargate",
     name: "Kriti Malhotra",
     city: "Pune / Swargate",
     title: "Independent High Class Escort in Swargate Pune 💫",
@@ -350,7 +350,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 20. Kondhwa
   {
-    id: 20,
+    id: "payal-rajput-pune-kondhwa",
     name: "Payal Rajput",
     city: "Pune / Kondhwa",
     title: "Independent Escort Partner in Kondhwa & NIBM Road 🌸",
@@ -367,7 +367,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 21. Fatima Nagar
   {
-    id: 21,
+    id: "swati-mishra-pune-fatima-nagar",
     name: "Swati Mishra",
     city: "Pune / Fatima Nagar",
     title: "High Profile Call Girl Service in Fatima Nagar & Wanowrie 💖",
@@ -384,7 +384,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 22. Yerwada
   {
-    id: 22,
+    id: "rashmi-gautham-pune-yerwada",
     name: "Rashmi Gautham",
     city: "Pune / Yerwada",
     title: "Independent Escort Girl in Yerwada Near Airport Road 🔥",
@@ -401,7 +401,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 23. Pashan
   {
-    id: 23,
+    id: "deepika-nambiar-pune-pashan",
     name: "Deepika Nambiar",
     city: "Pune / Pashan",
     title: "College Student Escort in Pashan & Sus Road ⚾",
@@ -418,7 +418,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 24. Mundhwa
   {
-    id: 24,
+    id: "shruti-iyer-pune-mundhwa",
     name: "Shruti Iyer",
     city: "Pune / Mundhwa",
     title: "Verified Independent Companion in Mundhwa Pune 🌷",
@@ -435,7 +435,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 25. Lohegaon
   {
-    id: 25,
+    id: "trisha-mukherjee-pune-lohegaon",
     name: "Trisha Mukherjee",
     city: "Pune / Lohegaon",
     title: "VIP Airport Transit & Hotel Escort in Lohegaon Dhanori 🏖️",
@@ -452,7 +452,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 26. Katraj
   {
-    id: 26,
+    id: "aditi-bhatia-pune-katraj",
     name: "Aditi Bhatia",
     city: "Pune / Katraj",
     title: "Young Independent Girl Escort in Katraj Pune 🎀",
@@ -469,7 +469,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 27. Model Colony
   {
-    id: 27,
+    id: "radhika-merchant-pune-model-colony",
     name: "Radhika Merchant",
     city: "Pune / Model Colony",
     title: "VIP Escort & Dating Partner in Model Colony Shivajinagar ✈️",
@@ -486,7 +486,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 28. Prabhat Road
   {
-    id: 28,
+    id: "jyoti-saxena-pune-prabhat-road",
     name: "Jyoti Saxena",
     city: "Pune / Prabhat Road",
     title: "Independent Escort & Dating Partner on Prabhat Road 💐",
@@ -503,7 +503,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 29. Deccan Gymkhana
   {
-    id: 29,
+    id: "mansi-joshi-pune-deccan-gymkhana",
     name: "Mansi Joshi",
     city: "Pune / Deccan Gymkhana",
     title: "High Profile Call Girl Service in Deccan Gymkhana 🌺",
@@ -520,7 +520,7 @@ export const initialProductsData: ProductItem[] = [
 
   // 30. Wagholi
   {
-    id: 30,
+    id: "sunita-rao-pune-wagholi",
     name: "Sunita Rao",
     city: "Pune / Wagholi",
     title: "Desi College Escort Service in Wagholi Pune 💋",

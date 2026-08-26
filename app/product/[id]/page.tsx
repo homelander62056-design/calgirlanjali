@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { initialProductsData } from "../productsData";
 import ProductDetailClient from "./ProductDetailClient";
-import { getModelSpecsAndDetails } from "./data";
+import { getModelSpecsAndDetails, findProductById } from "./data";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -17,8 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const productId = Number(id);
-  const product = initialProductsData.find((item) => item.id === productId);
+  const product = findProductById(id);
 
   if (!product) {
     return {
@@ -76,8 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProductDetailPage({ params }: Props) {
   const { id } = await params;
-  const productId = Number(id);
-  const product = initialProductsData.find((item) => item.id === productId);
+  const product = findProductById(id);
 
   if (!product) {
     notFound();

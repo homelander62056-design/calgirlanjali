@@ -1,4 +1,4 @@
-import { ProductItem } from "../productsData";
+import { ProductItem, initialProductsData } from "../productsData";
 
 export interface ModelFAQ {
   question: string;
@@ -21,7 +21,47 @@ export interface ModelDetailSpec {
   locationDetail: string;
 }
 
+export function getProductIndex(product: ProductItem): number {
+  if (typeof product.id === "number") {
+    return product.id - 1;
+  }
+  const idx = initialProductsData.findIndex(
+    (p) => p.id === product.id || p.name.toLowerCase() === product.name.toLowerCase()
+  );
+  return idx >= 0 ? idx : 0;
+}
+
+export function findProductById(rawId: string | string[] | undefined): ProductItem | undefined {
+  if (!rawId) return undefined;
+  
+  const idStr = Array.isArray(rawId) ? rawId.join("/") : rawId;
+  const decoded = decodeURIComponent(idStr).trim().toLowerCase();
+  const normalized = decoded.replace(/[\/\s_]+/g, "-");
+
+  // 1. Direct match by id
+  const directMatch = initialProductsData.find((p) => {
+    const pId = p.id.toString().toLowerCase();
+    const pNorm = pId.replace(/[\/\s_]+/g, "-");
+    return pId === decoded || pNorm === normalized;
+  });
+  if (directMatch) return directMatch;
+
+  // 2. Numeric match (e.g. "1", "2")
+  const num = parseInt(decoded, 10);
+  if (!isNaN(num) && num >= 1 && num <= initialProductsData.length) {
+    return initialProductsData[num - 1];
+  }
+
+  // 3. Name slug match (e.g. "ananya-sharma")
+  return initialProductsData.find((p) => {
+    const nameSlug = p.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    return normalized.includes(nameSlug) || nameSlug.includes(normalized);
+  });
+}
+
 export function getModelSpecsAndDetails(product: ProductItem): ModelDetailSpec & { displayImage: string } {
+  const index = getProductIndex(product);
+
   // Spec variations based on ID for variety across models
   const specVariations = [
     { height: "5'3\"", weight: "46 kg", figure: "32-24-33", hair: "Glossy Black", eyes: "Warm Brown", languages: "Hindi, English, Marathi", personality: "Charming & Affectionate" },
@@ -32,11 +72,11 @@ export function getModelSpecsAndDetails(product: ProductItem): ModelDetailSpec &
     { height: "5'7\"", weight: "52 kg", figure: "34-25-36", hair: "Natural Black", eyes: "Dark Brown", languages: "Hindi, English, Gujarati", personality: "High-Profile & Glamorous" },
   ];
 
-  const spec = specVariations[(product.id - 1) % specVariations.length];
+  const spec = specVariations[index % specVariations.length];
   const locParts = product.city.split("/");
   const subLoc = locParts.length > 1 ? locParts[1].trim() : locParts[0].trim();
 
-  const fallbackImg = `/images/image${((product.id - 1) % 16) + 1}.avif`;
+  const fallbackImg = `/images/image${(index % 16) + 1}.avif`;
   const displayImage = product.image && product.image.trim() !== ""
     ? product.image
     : fallbackImg;
@@ -108,7 +148,7 @@ export function getModelSpecsAndDetails(product: ProductItem): ModelDetailSpec &
     eyes: product.eyes || spec.eyes,
     languages: product.languages?.join(", ") || spec.languages,
     timing: product.timing || "Available 24/7",
-    badge: product.badge || (product.id % 2 === 0 ? "VIP Exclusive" : "Top Rated"),
+    badge: product.badge || (index % 2 === 1 ? "VIP Exclusive" : "Top Rated"),
     availableFor: product.availableFor || [
       "Dinner Dates",
       "Luxury Hotel Outcall",

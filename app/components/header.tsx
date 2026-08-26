@@ -46,26 +46,26 @@ export default function HeaderPage() {
       <Link href="/" className="flex items-center gap-2 group">
         <img
           src="/images/logo.png"
-          alt="Priya Escort Logo"
+          alt="Call Girl Anjali Logo"
           className="w-10 h-10 object-contain flex-shrink-0"
         />
         <div className="flex flex-col leading-none">
-          <span className="text-xl font-extrabold italic text-rose-500 tracking-tight">Priya Escort Service</span>
+          <span className="text-xl font-extrabold italic text-blue-600 tracking-tight">Call Girl Anjali</span>
         </div>
       </Link>
 
       {/* Desktop Navigation Links */}
       <nav className="hidden md:flex items-center gap-8 lg:gap-10 text-base font-semibold text-zinc-700 ml-auto mr-60">
-        <Link href="/" className="hover:text-rose-500 transition-colors">
+        <Link href="/" className="hover:text-blue-600 transition-colors">
           Home
         </Link>
-        <Link href="/product" className="hover:text-rose-500 transition-colors">
+        <Link href="/product" className="hover:text-blue-600 transition-colors">
           Models
         </Link>
 
         {/* Locations Dropdown on Hover */}
         <div className="relative group py-2">
-          <span className="hover:text-rose-500 group-hover:text-rose-500 transition-colors flex items-center gap-1 cursor-pointer">
+          <span className="hover:text-blue-600 group-hover:text-blue-600 transition-colors flex items-center gap-1 cursor-pointer">
             Locations
             <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -74,12 +74,12 @@ export default function HeaderPage() {
 
           {/* Locations Hover Card */}
           <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50 w-[420px]">
-            <div className="bg-white border border-pink-100/80 rounded-3xl p-6 sm:p-7 shadow-2xl grid grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-zinc-700">
+            <div className="bg-white border border-blue-100/80 rounded-3xl p-6 sm:p-7 shadow-2xl grid grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-zinc-700">
               {locationsList.map((loc) => (
                 <Link
                   key={loc}
                   href={`/product?city=${encodeURIComponent(loc)}`}
-                  className="hover:text-rose-500 transition-colors block py-0.5"
+                  className="hover:text-blue-600 transition-colors block py-0.5"
                 >
                   {loc}
                 </Link>
@@ -90,7 +90,7 @@ export default function HeaderPage() {
 
         {/* Services Dropdown on Hover */}
         <div className="relative group py-2">
-          <span className="hover:text-rose-500 group-hover:text-rose-500 transition-colors flex items-center gap-1 cursor-pointer">
+          <span className="hover:text-blue-600 group-hover:text-blue-600 transition-colors flex items-center gap-1 cursor-pointer">
             Services
             <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -99,12 +99,12 @@ export default function HeaderPage() {
 
           {/* Services Hover Card */}
           <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50 w-[300px]">
-            <div className="bg-white border border-pink-100/80 rounded-3xl p-6 shadow-2xl space-y-2.5 text-sm font-medium text-zinc-700">
+            <div className="bg-white border border-blue-100/80 rounded-3xl p-6 shadow-2xl space-y-2.5 text-sm font-medium text-zinc-700">
               {servicesList.map((srv) => (
                 <Link
                   key={srv}
                   href="/product"
-                  className="hover:text-rose-500 transition-colors block py-0.5"
+                  className="hover:text-blue-600 transition-colors block py-0.5"
                 >
                   {srv}
                 </Link>
@@ -113,10 +113,10 @@ export default function HeaderPage() {
           </div>
         </div>
 
-        <Link href="/blog" className="hover:text-rose-500 transition-colors">
+        <Link href="/blog" className="hover:text-blue-600 transition-colors">
           Blog
         </Link>
-        <Link href="/contact" className="hover:text-rose-500 transition-colors">
+        <Link href="/contact" className="hover:text-blue-600 transition-colors">
           Contact
         </Link>
       </nav>
@@ -126,7 +126,7 @@ export default function HeaderPage() {
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-zinc-800 hover:text-rose-500 p-2 rounded-lg transition-colors"
+          className="md:hidden text-zinc-800 hover:text-blue-600 p-2 rounded-lg transition-colors"
           aria-label="Toggle Menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,14 +142,14 @@ export default function HeaderPage() {
       {/* Mobile Drawer Dropdown */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-50 border-b border-zinc-200 p-5 space-y-3.5 md:hidden shadow-lg flex flex-col text-sm font-medium text-zinc-700 max-h-[80vh] overflow-y-auto">
-          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-rose-500 py-1">Home</Link>
-          <Link href="/product" onClick={() => setMenuOpen(false)} className="hover:text-rose-500 py-1">Models</Link>
+          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Home</Link>
+          <Link href="/product" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Models</Link>
           
           {/* Mobile Locations Expandable */}
           <div>
             <button
               onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
-              className="w-full flex items-center justify-between hover:text-rose-500 py-1 font-medium"
+              className="w-full flex items-center justify-between hover:text-blue-600 py-1 font-medium"
             >
               <span>Locations</span>
               <svg className={`w-4 h-4 transition-transform ${mobileLocationsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ export default function HeaderPage() {
                     key={loc}
                     href={`/product?city=${encodeURIComponent(loc)}`}
                     onClick={() => setMenuOpen(false)}
-                    className="hover:text-rose-500 py-1"
+                    className="hover:text-blue-600 py-1"
                   >
                     {loc}
                   </Link>
@@ -176,7 +176,7 @@ export default function HeaderPage() {
           <div>
             <button
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-              className="w-full flex items-center justify-between hover:text-rose-500 py-1 font-medium"
+              className="w-full flex items-center justify-between hover:text-blue-600 py-1 font-medium"
             >
               <span>Services</span>
               <svg className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,7 +190,7 @@ export default function HeaderPage() {
                     key={srv}
                     href="/product"
                     onClick={() => setMenuOpen(false)}
-                    className="block hover:text-rose-500 py-1"
+                    className="block hover:text-blue-600 py-1"
                   >
                     {srv}
                   </Link>
@@ -199,8 +199,8 @@ export default function HeaderPage() {
             )}
           </div>
 
-          <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:text-rose-500 py-1">Blog</Link>
-          <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-rose-500 py-1">Contact</Link>
+          <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Blog</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Contact</Link>
         </div>
       )}
 

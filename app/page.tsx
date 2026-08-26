@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import ProductClient from "./products/ProductClient";
+import ProductClient from "./product/ProductClient";
 import HomeBelow from "./components/homeBelow";
 
 export default function Page() {
@@ -15,12 +15,12 @@ export default function Page() {
         {/* Top Hero Section matching user screenshot inside bg-gray-50 */}
         <section className="py-6 sm:py-8 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
 
-          {/* Dark Hero Banner Card */}
-          <div className="relative bg-gray-600 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl border border-purple-900/40 overflow-hidden">
+          {/* Light Hero Banner Card */}
+          <div className="relative bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xl border border-zinc-200 overflow-hidden">
 
             {/* Background ambient glow effects */}
-            <div className="absolute top-0 left-1/4 w-80 h-80 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 left-1/4 w-80 h-80 bg-blue-100/50 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-100/50 rounded-full blur-3xl pointer-events-none"></div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
 
@@ -28,24 +28,25 @@ export default function Page() {
               <div className="lg:col-span-7 space-y-6 text-left">
 
                 {/* Pill Badge */}
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-rose-400 bg-rose-950/50 border border-rose-500/30 uppercase">
-                  <span className="w-4 h-0.5 bg-rose-500 rounded-full"></span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 uppercase">
+                  <span className="w-4 h-0.5 bg-blue-600 rounded-full"></span>
                   <span>Pune&apos;s Finest</span>
                 </div>
 
                 {/* Main Title */}
-                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-white">
-                  <span className="bg-gradient-to-r from-amber-100 via-amber-200 to-yellow-300 bg-clip-text text-transparent block">
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-zinc-900">
+                  <span className="block">
                     Make Every
                   </span>
-                  <span className="bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-400 bg-clip-text text-transparent block mt-1">
+                  <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent block mt-1">
                     Night Special
                   </span>
                 </h1>
 
                 {/* Description Paragraph */}
-                <p className="text-base sm:text-lg text-zinc-300 max-w-xl leading-relaxed">
-                  Elevated experiences for unforgettable nights. Sophisticated, discreet, and designed exclusively for Pune.                </p>
+                <p className="text-base sm:text-lg text-zinc-600 max-w-xl leading-relaxed">
+                  Elevated experiences for unforgettable nights. Sophisticated, discreet, and designed exclusively for Pune.
+                </p>
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -53,7 +54,7 @@ export default function Page() {
                   {/* View Collection -> Links to Models page (/product) */}
                   <Link
                     href="/product"
-                    className="bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold text-xs sm:text-sm tracking-wider uppercase px-7 py-3.5 rounded-2xl shadow-lg shadow-pink-500/25 hover:shadow-pink-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
+                    className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold text-xs sm:text-sm tracking-wider uppercase px-7 py-3.5 rounded-2xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>View Collection</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +65,7 @@ export default function Page() {
                   {/* Private Inquiry -> Links to Contact page (/contact) */}
                   <Link
                     href="/contact"
-                    className="border border-purple-500/40 bg-purple-950/40 hover:bg-purple-900/60 hover:border-purple-300 text-purple-200 hover:text-white font-semibold text-xs sm:text-sm tracking-wider uppercase px-7 py-3.5 rounded-2xl transition-all flex items-center justify-center cursor-pointer"
+                    className="border border-zinc-200 bg-white hover:bg-zinc-50 hover:border-zinc-300 text-zinc-700 hover:text-zinc-900 font-semibold text-xs sm:text-sm tracking-wider uppercase px-7 py-3.5 rounded-2xl transition-all flex items-center justify-center cursor-pointer shadow-sm"
                   >
                     <span>Private Inquiry</span>
                   </Link>
@@ -72,18 +73,18 @@ export default function Page() {
                 </div>
 
                 {/* Stats Counters Row */}
-                <div className="pt-6 border-t border-purple-900/50 flex items-center gap-8 sm:gap-14 text-left">
+                <div className="pt-6 border-t border-zinc-200 flex items-center gap-8 sm:gap-14 text-left">
                   <div>
-                    <div className="text-2xl sm:text-3xl font-extrabold text-white">50+</div>
-                    <div className="text-xs text-zinc-400 font-medium mt-0.5">Verified Models</div>
+                    <div className="text-2xl sm:text-3xl font-extrabold text-zinc-900">50+</div>
+                    <div className="text-xs text-zinc-500 font-medium mt-0.5">Verified Models</div>
                   </div>
                   <div>
-                    <div className="text-2xl sm:text-3xl font-extrabold text-white">150+</div>
-                    <div className="text-xs text-zinc-400 font-medium mt-0.5">Happy Clients</div>
+                    <div className="text-2xl sm:text-3xl font-extrabold text-zinc-900">150+</div>
+                    <div className="text-xs text-zinc-500 font-medium mt-0.5">Happy Clients</div>
                   </div>
                   <div>
-                    <div className="text-2xl sm:text-3xl font-extrabold text-white">24/7</div>
-                    <div className="text-xs text-zinc-400 font-medium mt-0.5">Availability</div>
+                    <div className="text-2xl sm:text-3xl font-extrabold text-zinc-900">24/7</div>
+                    <div className="text-xs text-zinc-500 font-medium mt-0.5">Availability</div>
                   </div>
                 </div>
 
@@ -92,7 +93,7 @@ export default function Page() {
               {/* Right Column Image Card */}
               <div className="lg:col-span-5 relative flex justify-center">
 
-                <div className="relative w-full max-w-md h-[400px] sm:h-[480px] rounded-3xl overflow-hidden border border-pink-500/20 shadow-2xl shadow-purple-950/80 bg-zinc-900 group">
+                <div className="relative w-full max-w-md h-[400px] sm:h-[480px] rounded-3xl overflow-hidden border border-zinc-200 shadow-2xl shadow-blue-900/10 bg-gray-100 group">
                   <img
                     src="/images/firstpage.avif"
                     alt="Featured Pune Companion"
@@ -106,10 +107,10 @@ export default function Page() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
 
                   {/* Featured Badge */}
-                  <div className="absolute bottom-4 left-4 px-4 py-2 bg-black/70 backdrop-blur-md rounded-2xl border border-pink-500/30 flex items-center gap-2.5 shadow-lg">
+                  <div className="absolute bottom-4 left-4 px-4 py-2 bg-black/70 backdrop-blur-md rounded-2xl border border-blue-500/30 flex items-center gap-2.5 shadow-lg">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span className="text-xs font-bold text-amber-300 tracking-wider uppercase">Featured:</span>
-                    <span className="text-sm font-extrabold text-pink-400">Priya Kulkarni</span>
+                    <span className="text-sm font-extrabold text-cyan-300">Anjali pawar</span>
                   </div>
 
                 </div>
@@ -157,12 +158,11 @@ export default function Page() {
 
           {/* OUR COLLECTION Section Title */}
           <div className="pt-10 text-center space-y-1">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#ff2d55]">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
               OUR COLLECTION
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900">
-              <span>Featured </span>
-              <span className="text-[#ff2d55]">Models</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-blue-600">
+              Featured Models
             </h2>
             <p className="text-sm text-zinc-500 pt-1">
               Handpicked companions in Pune who define elegance and sophistication

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ProductItem, initialProductsData } from "../productsData";
-import { getModelSpecsAndDetails } from "./data";
+import { getModelSpecsAndDetails, getProductIndex } from "./data";
 import { trackWhatsAppClick, createWhatsAppLink } from "../../utils/trackWhatsapp";
 
 interface ProductDetailClientProps {
@@ -15,6 +15,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
   const cleanPhone = product.phone.replace(/[^+\d]/g, "");
   const whatsappUrl = createWhatsAppLink(product.name, product.city, product.whatsappNumber);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   // Get related models excluding current
   const relatedModels = initialProductsData
@@ -48,18 +49,29 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
 
           {/* Left Column: Model Image */}
           <div className="lg:col-span-5 w-full">
-            <div className="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm aspect-[3/4] relative max-h-[540px] w-full">
+            <div
+              onClick={() => setIsImageModalOpen(true)}
+              className="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm aspect-[3/4] relative max-h-[540px] w-full cursor-pointer group"
+              title="Click to view full photo"
+            >
               <img
                 src={details.displayImage}
                 alt={`${product.name} - ${product.city} Escort Model`}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 onError={(e) => {
-                  e.currentTarget.src = `/images/image${((product.id - 1) % 16) + 1}.avif`;
+                  e.currentTarget.src = `/images/image${(getProductIndex(product) % 16) + 1}.avif`;
                 }}
               />
+              {/* Zoom Pill on hover */}
+              <div className="absolute bottom-3 right-3 bg-black/60 hover:bg-black/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 z-10 pointer-events-none">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                </svg>
+                <span>Click to Expand</span>
+              </div>
               {/* Status Badge (Top Left) */}
-              <div className="absolute top-3 left-3 bg-emerald-600/90 backdrop-blur-xs text-white font-bold text-xs px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+              <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-xs border border-blue-400/30 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
                 <span>{product.status || "Available Now"}</span>
               </div>
             </div>
@@ -244,9 +256,9 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         <div className="pt-6 space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">
-              Related <span className="text-[#ff2d55]">Models</span>
+              Explore <span className="text-blue-600">More</span>
             </h2>
-            <Link href="/product" className="text-xs sm:text-sm font-bold text-rose-500 hover:underline">
+            <Link href="/product" className="text-xs sm:text-sm font-bold text-blue-600 hover:underline">
               View All Models →
             </Link>
           </div>
@@ -268,7 +280,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                       alt={`${item.name} in ${item.city}`}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                       onError={(e) => {
-                        e.currentTarget.src = `/images/image${((item.id - 1) % 16) + 1}.avif`;
+                        e.currentTarget.src = `/images/image${(getProductIndex(item) % 16) + 1}.avif`;
                       }}
                     />
                     <span className="absolute top-3 left-3 bg-[#ff2d55] text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
@@ -319,6 +331,58 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         </div>
 
       </main>
+
+      {/* Fullscreen Image Lightbox Modal */}
+      {isImageModalOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+          onClick={() => setIsImageModalOpen(false)}
+        >
+          <button
+            onClick={() => setIsImageModalOpen(false)}
+            className="absolute top-4 right-4 text-white hover:text-rose-400 bg-white/10 hover:bg-white/20 p-2.5 rounded-full transition-colors z-50 cursor-pointer"
+            aria-label="Close modal"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <div
+            className="relative max-w-2xl max-h-[90vh] overflow-hidden rounded-2xl shadow-2xl border border-white/20"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={details.displayImage}
+              alt={product.name}
+              className="max-h-[80vh] w-auto max-w-full object-contain rounded-2xl"
+              onError={(e) => {
+                e.currentTarget.src = `/images/image${(getProductIndex(product) % 16) + 1}.avif`;
+              }}
+            />
+            <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white flex items-center justify-between">
+              <div>
+                <h4 className="font-bold text-lg">{product.name}</h4>
+                <p className="text-xs text-zinc-300">{product.city} &bull; {product.age} yrs</p>
+              </div>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackWhatsAppClick({
+                    name: product.name,
+                    city: product.city,
+                    whatsappNumber: product.whatsappNumber,
+                  })
+                }
+                className="bg-[#25D366] hover:bg-emerald-600 text-white font-bold text-xs py-2 px-4 rounded-xl flex items-center gap-1.5 transition-all"
+              >
+                WhatsApp Now
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
