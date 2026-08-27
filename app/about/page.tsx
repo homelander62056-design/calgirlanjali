@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "About Us | Priya Escort Services",
     description: "Learn about Priya Escort Service, Pune's most distinguished companion network offering 100% verified profiles.",
     url: `${siteUrl}/about`,
-    siteName: "cal girl pune",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Security & Anti-Scam Policy | Priya Escort Services",
     description: "Learn how Priya Escort Services protects users, identifies common scams, and reports fraudulent activities securely.",
     url: `${siteUrl}/security`,
-    siteName: "cal girl hyderabad",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

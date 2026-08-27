@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Help & Support | Priya Escort Services",
     description: "Get assistance, technical support, and help with bookings and inquiries at Priya Escort Services in Hyderabad.",
     url: `${siteUrl}/helpSupport`,
-    siteName: "cal girl hyderabad",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

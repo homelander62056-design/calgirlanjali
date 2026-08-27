@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Disclaimer | Priya Escort Services",
     description: "Important legal disclaimer and 18+ adult age compliance notice for Priya Escort Services in Hyderabad.",
     url: `${siteUrl}/disclaimer`,
-    siteName: "cal girl hyderabad",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

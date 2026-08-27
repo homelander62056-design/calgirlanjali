@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Terms & Conditions | Priya Escort Services",
     description: "Terms and conditions of service, client guidelines, and legal terms for Priya Escort Services in Hyderabad.",
     url: `${siteUrl}/terms-conditions`,
-    siteName: "cal girl hyderabad",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

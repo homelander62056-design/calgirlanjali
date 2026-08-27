@@ -24,14 +24,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices
 
 export const metadata: Metadata = {
   title: {
-    default: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
-    template: "%s | Call Girl Anjali",
+    default: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
+    template: "%s | Anjali Escort Service",
   },
-  description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
-  keywords: "Pune escorts, call girls in Pune, Pune escort services, independent escorts Pune, VIP escorts Pune",
-  authors: [{ name: "Call Girl Anjali" }],
-  creator: "Call Girl Anjali",
-  publisher: "Call Girl Anjali",
+  description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+  keywords: "Pune escorts, call girls in Pune, Pune escort services, independent escorts Pune, VIP escorts Pune, Anjali escort service",
+  authors: [{ name: "Anjali Escort Service" }],
+  creator: "Anjali Escort Service",
+  publisher: "Anjali Escort Service",
   icons: {
     icon: [{ url: "/icon.png", type: "image/png" }],
     shortcut: ["/icon.png"],
@@ -42,17 +42,17 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
-    description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
+    description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
     url: siteUrl,
-    siteName: "Call Girl Anjali",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Call Girl Anjali | Premium Escorts in Pune & PCMC",
-    description: "Call Girl Anjali provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
+    description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
   },
   robots: {
     index: true,

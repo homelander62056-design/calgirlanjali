@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${product.name} - ${product.title}`,
       description: `${product.name} (${product.age} yrs), verified companion in ${product.city}. Direct booking via WhatsApp or phone.`,
       url: canonicalUrl,
-      siteName: "Priya Escort Services",
+      siteName: "Anjali Escort Service",
       locale: "en_IN",
       type: "profile",
       images: [

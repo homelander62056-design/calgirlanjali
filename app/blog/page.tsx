@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Blog & Updates | Priya Escort Services",
     description: "Read informative articles, practical guides, safety recommendations, and industry updates from Priya Escort Services in Pune.",
     url: `${siteUrl}/blog`,
-    siteName: "cal girl pune",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

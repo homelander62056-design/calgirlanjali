@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Priya Escort Services",
     description: "Learn how Priya Escort Service safeguards your personal information, communication privacy, and browsing security.",
     url: `${siteUrl}/privacyPolicy`,
-    siteName: "cal girl hyderabad",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

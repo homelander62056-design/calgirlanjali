@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Our Models & Escort Profiles in Pune",
     description: "Browse verified high-profile independent models and escort companions in Pune. Available 24/7 in Koregaon Park, Kalyani Nagar, Viman Nagar, Hinjewadi, and more.",
     url: `${siteUrl}/product`,
-    siteName: "cal girl pune",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },

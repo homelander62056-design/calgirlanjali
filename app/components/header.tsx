@@ -46,11 +46,11 @@ export default function HeaderPage() {
       <Link href="/" className="flex items-center gap-2 group">
         <img
           src="/images/logo.png"
-          alt="Call Girl Anjali Logo"
+          alt="Anjali Escort Service Logo"
           className="w-10 h-10 object-contain flex-shrink-0"
         />
         <div className="flex flex-col leading-none">
-          <span className="text-xl font-extrabold italic text-blue-600 tracking-tight">Call Girl Anjali</span>
+          <span className="text-xl font-extrabold italic text-blue-600 tracking-tight">Anjali Escort Service</span>
         </div>
       </Link>
 

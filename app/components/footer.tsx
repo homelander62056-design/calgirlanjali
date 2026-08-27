@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { trackWhatsAppClick, createWhatsAppLink } from "../utils/trackWhatsapp";
 
 export default function FooterPage() {
   return (
@@ -15,11 +16,11 @@ export default function FooterPage() {
           <Link href="/" className="flex items-center gap-2 group">
             <img
               src="/images/logo.png"
-              alt="Call Girl Anjali Logo"
+              alt="Anjali Escort Service Logo"
               className="w-10 h-10 object-contain flex-shrink-0"
             />
             <div className="flex flex-col leading-none">
-              <span className="text-xl font-extrabold italic text-blue-600 tracking-tight">Call Girl Anjali</span>
+              <span className="text-xl font-extrabold italic text-blue-600 tracking-tight">Anjali Escort Service</span>
             </div>
           </Link>
 
@@ -31,9 +32,16 @@ export default function FooterPage() {
           {/* Icon Buttons */}
           <div className="flex items-center gap-3 pt-1">
             <a
-              href="https://wa.me/919905752614?text=Hi%2C%20I%20am%20interested%20in%20booking%20your%20service%20via%20priyaescortservices.com"
+              href={createWhatsAppLink("General Inquiry", "Pune", "918294107610")}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackWhatsAppClick({
+                  name: "Footer Brand WhatsApp",
+                  city: "Pune",
+                  whatsappNumber: "918294107610",
+                })
+              }
               aria-label="WhatsApp"
               className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 hover:bg-emerald-200 transition-colors shadow-sm"
             >
@@ -42,7 +50,7 @@ export default function FooterPage() {
               </svg>
             </a>
             <a
-              href="tel:+919905752614"
+              href="tel:+918294107610"
               aria-label="Call"
               className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors shadow-sm"
             >
@@ -177,7 +185,7 @@ export default function FooterPage() {
       <div className="max-w-7xl mx-auto border-t border-zinc-200 mt-8 pt-8 space-y-3 text-xs font-semibold text-zinc-600">
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
           <div className="text-center text-sm font-medium">
-            <p>© {new Date().getFullYear()} Call Girl Anjali. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Anjali Escort Service. All rights reserved.</p>
           </div>
           <p className="text-center md:text-right">
             Strictly 18+ Adult Service. By accessing this site, you confirm you are of legal age.
@@ -195,9 +203,16 @@ export default function FooterPage() {
       {/* Floating Call & WhatsApp Action Buttons at Bottom Right */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <a
-          href="https://wa.me/919905752614?text=Hi%2C%20I%20am%20interested%20in%20booking%20your%20service%20via%20priyaescortservices.com"
+          href={createWhatsAppLink("Floating Button", "Pune", "918294107610")}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            trackWhatsAppClick({
+              name: "Floating WhatsApp Button",
+              city: "Pune",
+              whatsappNumber: "918294107610",
+            })
+          }
           aria-label="Contact WhatsApp"
           className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >
@@ -206,7 +221,7 @@ export default function FooterPage() {
           </svg>
         </a>
         <a
-          href="tel:+919905752614"
+          href="tel:+918294107610"
           aria-label="Call Now"
           className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >

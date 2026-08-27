@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { trackWhatsAppClick, createWhatsAppLink } from "../utils/trackWhatsapp";
 
 interface InformProps {
   whatsappUrl?: string;
@@ -6,8 +9,8 @@ interface InformProps {
 }
 
 export default function Inform({
-  whatsappUrl = "https://wa.me/919905752614?text=Hi%2C%20I%20am%20interested%20in%20booking%20your%20service%20via%20priyaescortservices.com",
-  phoneUrl = "tel:+919905752614",
+  whatsappUrl = createWhatsAppLink("Inquiry", "Pune", "918294107610"),
+  phoneUrl = "tel:+918294107610",
 }: InformProps) {
   return (
     <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
@@ -28,6 +31,13 @@ export default function Inform({
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackWhatsAppClick({
+                name: "Inform Banner WhatsApp",
+                city: "Pune",
+                whatsappNumber: "918294107610",
+              })
+            }
             className="bg-[#25D366] hover:bg-emerald-600 text-white font-semibold text-sm sm:text-base px-7 py-3 rounded-2xl shadow-sm hover:shadow-md transition-all hover:scale-105 active:scale-95 cursor-pointer inline-flex items-center justify-center"
           >
             WhatsApp Us

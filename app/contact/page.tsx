@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Priya Escort Services",
     description: "Contact Priya Escort Services in Pune 24/7. Confidential booking, instant WhatsApp & direct phone calls.",
     url: `${siteUrl}/contact`,
-    siteName: "cal girl pune",
+    siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
   },
