@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const locationsList = [
   "Koregaon Park",
@@ -35,15 +36,25 @@ const servicesList = [
 ];
 
 export default function HeaderPage() {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/product?city=${encodeURIComponent(searchQuery.trim())}`);
+      setMenuOpen(false);
+    }
+  };
+
   return (
-    <header className="w-full bg-gray-50 border-b border-zinc-200/80 py-3.5 px-4 sm:px-6 lg:px-12 flex items-center justify-between sticky top-0 z-50 shadow-xs">
+    <header className="w-full bg-gray-50 border-b border-zinc-200/80 py-3 px-4 sm:px-6 lg:px-12 flex items-center justify-between sticky top-0 z-50 shadow-xs gap-4">
 
       {/* Brand / Logo */}
-      <Link href="/" className="flex items-center gap-2 group">
+      <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
         <img
           src="/images/logo.png"
           alt="Anjali Escort Service Logo"
@@ -54,8 +65,24 @@ export default function HeaderPage() {
         </div>
       </Link>
 
+      {/* Desktop Search Bar */}
+      <form onSubmit={handleSearchSubmit} className="hidden lg:flex items-center relative max-w-xs w-full">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder="Search call girl, city, model..."
+          className="w-full pl-9 pr-4 py-1.5 text-xs bg-white border border-zinc-200 rounded-full focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 text-zinc-800 placeholder-zinc-400 transition-all shadow-2xs"
+        />
+        <button type="submit" aria-label="Search" className="absolute left-3 text-zinc-400 hover:text-rose-500">
+          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+      </form>
+
       {/* Desktop Navigation Links */}
-      <nav className="hidden md:flex items-center gap-8 lg:gap-10 text-base font-semibold text-zinc-700 ml-auto mr-60">
+      <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-zinc-700 ml-auto">
         <Link href="/" className="hover:text-blue-600 transition-colors">
           Home
         </Link>
@@ -142,6 +169,22 @@ export default function HeaderPage() {
       {/* Mobile Drawer Dropdown */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-50 border-b border-zinc-200 p-5 space-y-3.5 md:hidden shadow-lg flex flex-col text-sm font-medium text-zinc-700 max-h-[80vh] overflow-y-auto">
+          {/* Mobile Search Form */}
+          <form onSubmit={handleSearchSubmit} className="relative w-full pb-2">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search call girl, city, model..."
+              className="w-full pl-9 pr-4 py-2 text-xs bg-white border border-zinc-200 rounded-xl focus:outline-none focus:border-rose-500 text-zinc-800"
+            />
+            <button type="submit" aria-label="Search" className="absolute left-3 top-2.5 text-zinc-400">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </form>
+
           <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Home</Link>
           <Link href="/product" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Models</Link>
           
