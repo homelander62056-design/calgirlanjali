@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import SecurityClient from "@/app/security/SecurityClient";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
 
 export const metadata: Metadata = {
   title: "Security – How to Report a Scam",

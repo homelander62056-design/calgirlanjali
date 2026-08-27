@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
 
 export const metadata: Metadata = {
   title: "About Us - Elite Companion Network in Pune",

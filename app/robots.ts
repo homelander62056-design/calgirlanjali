@@ -1,14 +1,14 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/api/'],
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/api/"],
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }

@@ -20,15 +20,15 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
 
 export const metadata: Metadata = {
   title: {
     default: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
     template: "%s | Anjali Escort Service",
   },
-  description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
-  keywords: "Pune escorts, call girls in Pune, Pune escort services, independent escorts Pune, VIP escorts Pune, Anjali escort service",
+  description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified profiles and contact us 24/7.",
+  keywords: "Pune escorts, call girls in Pune, Pune escort services, independent escorts Pune, VIP escorts Pune, Anjali escort service, calgirlanjali",
   authors: [{ name: "Anjali Escort Service" }],
   creator: "Anjali Escort Service",
   publisher: "Anjali Escort Service",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
-    description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified profiles and contact us 24/7.",
     url: siteUrl,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
-    description: "Anjali Escort Service provides professional and discreet escort services in Pune. Explore our services and contact us for more information.",
+    description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified profiles and contact us 24/7.",
   },
   robots: {
     index: true,
@@ -67,6 +67,37 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "url": siteUrl,
+      "name": "Anjali Escort Service",
+      "description": "Premium Escorts & Companion Services in Pune & PCMC",
+      "publisher": {
+        "@id": `${siteUrl}/#organization`,
+      },
+      "inLanguage": "en-IN",
+    },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      "name": "Anjali Escort Service",
+      "url": siteUrl,
+      "logo": `${siteUrl}/images/logo.png`,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8294107610",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi", "Marathi"],
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,6 +108,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col justify-between bg-white text-zinc-800 font-sans">
         <HeaderPage />
         <main className="flex-1">{children}</main>

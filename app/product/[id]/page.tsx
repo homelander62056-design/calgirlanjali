@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
   const canonicalUrl = `${siteUrl}/product/${product.id}`;
   const details = getModelSpecsAndDetails(product);
 
   return {
-    title: `${product.name} - Escort & Companion in ${product.city} | Priya Escort Services`,
+    title: `${product.name} - Escort & Companion in ${product.city} | Anjali Escort Service`,
     description: `${product.name} (${product.age} yrs), verified independent companion in ${details.locationDetail}. Direct contact: ${product.phone}. Available 24/7 for luxury hotel outcalls & dinner dates.`,
     alternates: {
       canonical: canonicalUrl,
@@ -81,7 +81,7 @@ export default async function ProductDetailPage({ params }: Props) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://priyaescortservices.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
   const details = getModelSpecsAndDetails(product);
   const canonicalUrl = `${siteUrl}/product/${product.id}`;
   const imageUrl = details.displayImage.startsWith("http") ? details.displayImage : `${siteUrl}${details.displayImage}`;
