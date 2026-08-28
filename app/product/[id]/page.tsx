@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: "Profile Not Found | Priya Escort Services",
+      title: "Profile Not Found | Cal Girl Anjali Escort Services",
       robots: {
         index: false,
         follow: false,
@@ -29,13 +29,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
   const canonicalUrl = `${siteUrl}/product/${product.id}`;
   const details = getModelSpecsAndDetails(product);
+  const imageUrl = details.displayImage.startsWith("http")
+    ? details.displayImage
+    : `${siteUrl}${details.displayImage}`;
+
+  // Use curated SEO fields from productsData if available, else fallback
+  const metaTitle =
+    product.metaTitle ||
+    `${product.name} – Escort & Companion in ${product.city} | Cal Girl Anjali`;
+
+  const metaDescription =
+    product.metaDescription ||
+    `${product.name} (${product.age} yrs), verified independent companion in ${details.locationDetail}. Direct contact: ${product.phone}. Available 24/7 for luxury hotel outcalls & dinner dates.`;
 
   return {
-    title: `${product.name} - Escort & Companion in ${product.city} | Anjali Escort Service`,
-    description: `${product.name} (${product.age} yrs), verified independent companion in ${details.locationDetail}. Direct contact: ${product.phone}. Available 24/7 for luxury hotel outcalls & dinner dates.`,
+    title: metaTitle,
+    description: metaDescription,
+    keywords: [
+      `${product.name}`,
+      `escort in ${details.locationDetail}`,
+      `call girl ${details.locationDetail}`,
+      `escort service Pune`,
+      `companion ${product.city}`,
+      `independent escort Pune`,
+    ],
     alternates: {
       canonical: canonicalUrl,
     },
@@ -51,24 +71,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${product.name} - ${product.title}`,
-      description: `${product.name} (${product.age} yrs), verified companion in ${product.city}. Direct booking via WhatsApp or phone.`,
+      title: metaTitle,
+      description: metaDescription,
       url: canonicalUrl,
-      siteName: "Anjali Escort Service",
+      siteName: "Cal Girl Anjali Escort Service",
       locale: "en_IN",
       type: "profile",
       images: [
         {
-          url: details.displayImage.startsWith("http") ? details.displayImage : `${siteUrl}${details.displayImage}`,
-          alt: `${product.name} in ${product.city}`,
+          url: imageUrl,
+          width: 800,
+          height: 1067,
+          alt: `${product.name} – Escort in ${product.city}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.name} | ${product.city} Escort Companion`,
-      description: `${product.name} (${product.age} yrs) in ${product.city}. 100% verified profile.`,
-      images: [details.displayImage.startsWith("http") ? details.displayImage : `${siteUrl}${details.displayImage}`],
+      title: metaTitle,
+      description: metaDescription,
+      images: [imageUrl],
     },
   };
 }
@@ -81,7 +103,7 @@ export default async function ProductDetailPage({ params }: Props) {
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://calgirlanjali.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
   const details = getModelSpecsAndDetails(product);
   const canonicalUrl = `${siteUrl}/product/${product.id}`;
   const imageUrl = details.displayImage.startsWith("http") ? details.displayImage : `${siteUrl}${details.displayImage}`;

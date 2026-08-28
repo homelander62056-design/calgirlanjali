@@ -23,6 +23,8 @@ export interface ProductItem {
   timing?: string;
   badge?: string;
   availableFor?: string[];
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const initialProductsData: ProductItem[] = [
@@ -41,6 +43,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image1.avif",
     aboutMe: "GUARANTEE FULL SATISFACTION & IN CASE OF ANY UNHAPPY EXPERIENCE, WE WOULD REFUND YOUR FEES, WITHOUT ANY QUESTIONS ASKED 👉 WILL PROVIDE YOU WITH SEXY MODELS WHO WILL DANCE & DRINK WITH YOU AND ALSO PROVIDE YOU RELAXING COMPANIONSHIP. 👉YOU MAY TAKE THEM OUT FOR A PARTY OR PRIVATE DINNER. 👉THESE GIRLS ARE INTERESTED IN MAKING YOUR TIME IN PUNE SPECIAL.\n\nBookings Open Now! Excellent High profile Independent Female Model VIP High Class And Top Class Service with us in Koregaon Park Pune.",
+    metaTitle: "Ananya Sharma – Call Girl in Koregaon Park Pune | 24/7",
+    metaDescription: "Meet Ananya Sharma, a high-class independent companion in Koregaon Park Pune. Real meet & video call available 24/7. Luxury hotel & home visits with full privacy.",
   },
   // 2. Kalyani Nagar
   {
@@ -57,6 +61,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image31.avif",
     aboutMe: "High profile Independent Female Model VIP High Class Service in Kalyani Nagar Pune. Professional service provider with discrete companionship and entertainment guaranteed.",
+    metaTitle: "Pooja Hegde – VIP Escort in Kalyani Nagar Pune | Model",
+    metaDescription: "Pooja Hegde offers VIP companion & model services in Kalyani Nagar Pune. Available for corporate events, dinner dates & luxury hotel stays. Real meet guaranteed.",
   },
 
   // 3. Viman Nagar
@@ -74,6 +80,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image3.avif",
     aboutMe: "100% genuine photos, sweet nature and fully confidential service guaranteed for luxury hotel outcalls and residential visits in Viman Nagar Pune.",
+    metaTitle: "Priya Kulkarni – Call Girl in Viman Nagar Pune | Premium",
+    metaDescription: "Priya Kulkarni is a premium college companion in Viman Nagar Pune near Phoenix Marketcity. 100% genuine photos & confidential hotel/home outcall service.",
   },
 
   // 4. Hinjewadi
@@ -91,6 +99,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image29.avif",
     aboutMe: "Sweet, friendly demeanor, instant booking for outcall and incall services with top hospitality in Hinjewadi Pune.",
+    metaTitle: "Sneha Joshi – Escort in Hinjewadi IT Park Pune | Instant",
+    metaDescription: "Sneha Joshi is an independent escort near Hinjewadi Infotech Park Pune. Instant incall & outcall booking for IT executives. Friendly & discreet service.",
   },
 
   // 5. Baner
@@ -108,6 +118,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image5.avif",
     aboutMe: "High class model companion in Baner Pune. Perfect for business travelers seeking premium companion experience with full privacy.",
+    metaTitle: "Priya Sen – Model Escort in Baner Pune | High Class VIP",
+    metaDescription: "Priya Sen is a high-class model escort on Baner Road Pune. Ideal for business travelers seeking a premium companion experience with complete privacy.",
   },
 
   // 6. Wakad
@@ -125,6 +137,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image25.avif",
     aboutMe: "Gentle and attentive escort partner in Wakad Pune. Fast response on call and WhatsApp for instant hotel visits.",
+    metaTitle: "Kavya Verma – Luxury Escort in Wakad Pune | Fast Booking",
+    metaDescription: "Kavya Verma is a luxury escort & dating partner in Wakad Pune near Expressway. Fast WhatsApp response & instant hotel visit booking available.",
   },
 
   // 7. Kothrud
@@ -142,6 +156,8 @@ export const initialProductsData: ProductItem[] = [
     status: "online",
     image: "/images/image7.avif",
     aboutMe: "Quiet and respectful escort in Kothrud Pune. Direct call booking available with 100% privacy assurance.",
+    metaTitle: "Divya Deshmukh – Independent Escort in Kothrud Pune",
+    metaDescription: "Divya Deshmukh is a quiet & respectful independent escort in Kothrud Pune. Direct call booking with 100% privacy assurance for discreet gentlemen.",
   },
 
   // 8. Shivajinagar
@@ -159,6 +175,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image8.avif",
     aboutMe: "Attractive and friendly companion in Shivajinagar Pune. Available for evening dates, hotel visits and relaxing companionship.",
+    metaTitle: "Neha Singh – High Profile Call Girl in Shivajinagar Pune",
+    metaDescription: "Neha Singh is an attractive high-profile companion in Shivajinagar Pune. Available for evening dates, luxury hotel visits & long drives across Pune.",
   },
 
   // 9. Aundh
@@ -176,6 +194,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image9.avif",
     aboutMe: "Beautiful independent girl in Aundh Pune. Polite, punctual and committed to providing a peaceful experience.",
+    metaTitle: "Simran Gill – Young Independent Escort in Aundh Pune",
+    metaDescription: "Simran Gill is a beautiful independent escort in Aundh Pune. Polite, punctual & committed to a glamorous companion experience. Book now via WhatsApp.",
   },
 
   // 10. Magarpatta City
@@ -193,6 +213,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image10.avif",
     aboutMe: "Fun-loving college student escort in Magarpatta Cybercity Pune. Flexible timings, affordable packages, instant WhatsApp chat.",
+    metaTitle: "Aarti Patel – College Escort in Magarpatta City Pune",
+    metaDescription: "Aarti Patel is a fun-loving college escort in Magarpatta Cybercity Hadapsar Pune. Flexible timings, affordable packages & instant WhatsApp booking.",
   },
 
   // 11. Kharadi
@@ -210,6 +232,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Busy",
     image: "/images/image11.avif",
     aboutMe: "Elegant corporate companion in Kharadi EON IT Park Pune. Professional, discrete and well-mannered.",
+    metaTitle: "Ishita Roy – Corporate VIP Escort in Kharadi Pune | EON",
+    metaDescription: "Ishita Roy is an elegant corporate companion in Kharadi near EON Free Zone Pune. Professional & discreet service for IT executives and business travelers.",
   },
 
   // 12. FC Road
@@ -227,6 +251,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image12.avif",
     aboutMe: "Charming independent escort on FC Road Pune. Ideal companion for relaxing evenings and luxury hotel stays.",
+    metaTitle: "Meera Joshi – Independent Escort on FC Road Pune",
+    metaDescription: "Meera Joshi is a charming escort near Fergusson College Road Pune. Perfect for cafe dates, city drives & luxury hotel stays. Call or WhatsApp anytime.",
   },
 
   // 13. Pune Camp
@@ -244,6 +270,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image13.avif",
     aboutMe: "Sophisticated escort girl in Pune Camp & MG Road. Specially available for luxury 5-star hotel outcalls.",
+    metaTitle: "Shreya Das – 5-Star Hotel Escort in Pune Camp | MG Road",
+    metaDescription: "Shreya Das is a sophisticated escort in Pune Camp & MG Road. Specialises in luxury 5-star hotel outcalls & VIP heritage visits. Discreet & professional.",
   },
 
   // 14. Senapati Bapat Road
@@ -261,6 +289,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image14.avif",
     aboutMe: "Glamorous fashion model companion on Senapati Bapat Road Pune. Warm nature, hygienic, and committed to discretion.",
+    metaTitle: "Natasha Malik – Model Escort on SB Road Pune | JW Marriott",
+    metaDescription: "Natasha Malik is a glamorous fashion model escort on Senapati Bapat Road near JW Marriott Pune. Warm, hygienic & fully discreet companion service.",
   },
 
   // 15. Balewadi
@@ -278,6 +308,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image15.avif",
     aboutMe: "Friendly independent girl in Balewadi High Street Pune. Quick response on WhatsApp with direct phone call support.",
+    metaTitle: "Sonal Chauhan – Escort in Balewadi High Street Pune",
+    metaDescription: "Sonal Chauhan is a friendly independent escort in Balewadi High Street Pune. Quick WhatsApp & call response. Available for dinner dates & hotel visits.",
   },
 
   // 16. Bavdhan
@@ -295,6 +327,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image16.avif",
     aboutMe: "Lovely desi college girl in Bavdhan Pune. Sweet conversationalist and attentive companion.",
+    metaTitle: "Nisha Agarwal – Desi College Escort in Bavdhan Pune",
+    metaDescription: "Nisha Agarwal is a lovely desi college girl escort in Bavdhan near Chandani Chowk Pune. Sweet conversationalist & attentive private companion.",
   },
 
   // 17. Pimple Saudagar
@@ -312,6 +346,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image17.avif",
     aboutMe: "Mature and caring companion in Pimple Saudagar Pune. Safe, secure, and hassle-free meeting arrangements.",
+    metaTitle: "Tanvi Shah – High Class Escort in Pimple Saudagar PCMC",
+    metaDescription: "Tanvi Shah is a mature high-class escort in Pimple Saudagar Pune (PCMC). Safe, secure & hassle-free meeting arrangements. Call or WhatsApp to book.",
   },
 
   // 18. Pimpri Chinchwad
@@ -329,6 +365,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image18.avif",
     aboutMe: "High profile companion in Pimpri Chinchwad Pune. Available for outstation travels and local weekend stays.",
+    metaTitle: "Maya Deshmukh – VIP Escort in Pimpri Chinchwad Pune",
+    metaDescription: "Maya Deshmukh is a high-profile luxury escort in Pimpri Chinchwad (PCMC) Pune. Available for executive meets & weekend hotel stays. Book via WhatsApp.",
   },
 
   // 19. Swargate
@@ -346,6 +384,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image19.avif",
     aboutMe: "Elegant companion in Swargate Pune. Top rated verified profile with excellent feedback.",
+    metaTitle: "Kriti Malhotra – High Class Escort in Swargate Pune",
+    metaDescription: "Kriti Malhotra is a top-rated elegant escort near Swargate Pune transit hub. Verified profile with excellent feedback. Instant call & WhatsApp booking.",
   },
 
   // 20. Kondhwa
@@ -363,6 +403,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Offline",
     image: "/images/image20.avif",
     aboutMe: "Polite independent profile in Kondhwa & NIBM Road Pune. Simple booking process via direct phone call.",
+    metaTitle: "Payal Rajput – Independent Escort in Kondhwa NIBM Pune",
+    metaDescription: "Payal Rajput is a polite independent escort in Kondhwa & NIBM Road Pune. Simple and quick booking process via direct phone call. Discreet service.",
   },
 
   // 21. Fatima Nagar
@@ -380,6 +422,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image21.avif",
     aboutMe: "Friendly companion in Fatima Nagar Wanowrie Pune. 100% real photos, safety first policy and privacy guaranteed.",
+    metaTitle: "Swati Mishra – Call Girl in Fatima Nagar Wanowrie Pune",
+    metaDescription: "Swati Mishra is a high-profile companion in Fatima Nagar & Wanowrie Pune. 100% real photos, safety-first policy and complete privacy guaranteed.",
   },
 
   // 22. Yerwada
@@ -397,6 +441,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image22.avif",
     aboutMe: "Attractive girl available for home and hotel outcall services in Yerwada Pune.",
+    metaTitle: "Rashmi Gautham – Escort in Yerwada Airport Road Pune",
+    metaDescription: "Rashmi Gautham is an attractive independent escort in Yerwada near Airport Road Pune. Available for home & luxury hotel outcall services anytime.",
   },
 
   // 23. Pashan
@@ -414,6 +460,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image23.avif",
     aboutMe: "Young college escort near Pashan & Sus Road Pune. Fun, energetic and well-mannered companion for outings.",
+    metaTitle: "Deepika Nambiar – College Escort in Pashan Sus Road Pune",
+    metaDescription: "Deepika Nambiar is a fun & energetic college escort near Pashan Lake & Sus Road Pune. Well-mannered companion for outings, dates & hotel visits.",
   },
 
   // 24. Mundhwa
@@ -431,6 +479,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image24.avif",
     aboutMe: "Sweet and honest companion in Mundhwa Pune. Direct phone call booking and quick WhatsApp response.",
+    metaTitle: "Shruti Iyer – Verified Escort in Mundhwa Pune | KP Annexe",
+    metaDescription: "Shruti Iyer is a verified sweet companion in Mundhwa near Koregaon Park Annexe Pune. Direct call booking & quick WhatsApp response guaranteed.",
   },
 
   // 25. Lohegaon
@@ -448,6 +498,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image25.avif",
     aboutMe: "High class model companion for Pune Airport layovers and hotel visits in Lohegaon & Dhanori.",
+    metaTitle: "Trisha Mukherjee – Airport Escort in Lohegaon Pune | VIP",
+    metaDescription: "Trisha Mukherjee is a VIP model escort for Pune Airport layovers & hotel stays in Lohegaon Dhanori. High-class discreet service available 24/7.",
   },
 
   // 26. Katraj
@@ -465,6 +517,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image26.avif",
     aboutMe: "Polite young companion in Katraj Pune. Available for daytime and overnight bookings.",
+    metaTitle: "Aditi Bhatia – Young Escort in Katraj Pune | Bharati Area",
+    metaDescription: "Aditi Bhatia is a polite young independent escort in Katraj near Bharati Vidyapeeth Pune. Available for daytime & overnight bookings via call.",
   },
 
   // 27. Model Colony
@@ -482,6 +536,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image27.avif",
     aboutMe: "Located in Model Colony Pune. Ideal companion for travelers and executives with prompt service.",
+    metaTitle: "Radhika Merchant – VIP Escort in Model Colony Pune",
+    metaDescription: "Radhika Merchant is a VIP escort & dating partner in Model Colony Shivajinagar Pune. Ideal for executives, fine dining & peaceful private companionship.",
   },
 
   // 28. Prabhat Road
@@ -499,6 +555,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image28.avif",
     aboutMe: "Charming independent partner on Prabhat Road Pune. Clean, safe, and professional companion service.",
+    metaTitle: "Jyoti Saxena – Independent Escort on Prabhat Road Pune",
+    metaDescription: "Jyoti Saxena is a charming independent escort on Prabhat Road Deccan Pune. Clean, safe & professional companion service. Call or WhatsApp to book.",
   },
 
   // 29. Deccan Gymkhana
@@ -516,6 +574,8 @@ export const initialProductsData: ProductItem[] = [
     status: "Busy",
     image: "/images/image29.avif",
     aboutMe: "Respectful companion in Deccan Gymkhana Pune. Booking available directly via phone line.",
+    metaTitle: "Mansi Joshi – High Profile Escort in Deccan Gymkhana Pune",
+    metaDescription: "Mansi Joshi is a respectful high-profile companion in Deccan Gymkhana Pune. Direct WhatsApp & phone call booking. Discreet & professional service.",
   },
 
   // 30. Wagholi
@@ -533,5 +593,7 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image2.avif",
     aboutMe: "Sweet desi college girl in Wagholi Pune. High quality companion service for home and hotel outcalls.",
+    metaTitle: "Sunita Rao – Desi College Escort in Wagholi Nagar Road Pune",
+    metaDescription: "Sunita Rao is a sweet desi college escort in Wagholi on Nagar Road Pune. High-quality home & hotel outcall service. Instant WhatsApp booking available.",
   },
 ];
