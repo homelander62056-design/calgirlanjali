@@ -187,7 +187,7 @@ export default function HeaderPage() {
 
           <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Home</Link>
           <Link href="/product" onClick={() => setMenuOpen(false)} className="hover:text-blue-600 py-1">Models</Link>
-          
+
           {/* Mobile Locations Expandable */}
           <div>
             <button
