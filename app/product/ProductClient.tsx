@@ -222,7 +222,7 @@ function ProductContent() {
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-rose-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
                   {/* Top Image Box Container */}
-                  <Link href={`/product/${product.id}`} className="block relative w-full aspect-[4/5] overflow-hidden bg-zinc-100 cursor-pointer z-10">
+                  <Link href={`/product/${product.id}`} className="block relative w-full aspect-[4/4] sm:aspect-[4/5] overflow-hidden bg-zinc-100 cursor-pointer z-10">
                     <img
                       src={modelImg}
                       alt={product.name}

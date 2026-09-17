@@ -25,6 +25,12 @@ export interface ProductItem {
   availableFor?: string[];
   metaTitle?: string;
   metaDescription?: string;
+  latitude?: number;
+  longitude?: number;
+  postalCode?: string;
+  geoRegion?: string;
+  geoPlacename?: string;
+  geoPosition?: string;
 }
 
 export const initialProductsData: ProductItem[] = [
@@ -43,9 +49,16 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image1.avif",
     aboutMe: "GUARANTEE FULL SATISFACTION & IN CASE OF ANY UNHAPPY EXPERIENCE, WE WOULD REFUND YOUR FEES, WITHOUT ANY QUESTIONS ASKED 👉 WILL PROVIDE YOU WITH SEXY MODELS WHO WILL DANCE & DRINK WITH YOU AND ALSO PROVIDE YOU RELAXING COMPANIONSHIP. 👉YOU MAY TAKE THEM OUT FOR A PARTY OR PRIVATE DINNER. 👉THESE GIRLS ARE INTERESTED IN MAKING YOUR TIME IN PUNE SPECIAL.\n\nBookings Open Now! Excellent High profile Independent Female Model VIP High Class And Top Class Service with us in Koregaon Park Pune.",
-    metaTitle: "Ananya Sharma – Call Girl in Koregaon Park Pune | 24/7",
-    metaDescription: "Meet Ananya Sharma, a high-class independent companion in Koregaon Park Pune. Real meet & video call available 24/7. Luxury hotel & home visits with full privacy.",
+    metaTitle: "Ananya Sharma – Call Girl in Koregaon Park Pune | 24/7 VIP Escort",
+    metaDescription: "Book Ananya Sharma (23), verified VIP call girl & independent escort in Koregaon Park Pune. Available 24/7 for luxury hotel visits & real meets. Call: +91 82941 07610.",
+    postalCode: "411001",
+    latitude: 18.5362,
+    longitude: 73.8940,
+    geoRegion: "IN-MH",
+    geoPlacename: "Koregaon Park, Pune, Maharashtra, India",
+    geoPosition: "18.5362;73.8940",
   },
+
   // 2. Kalyani Nagar
   {
     id: "pooja-hegde-pune-kalyani-nagar",
@@ -61,8 +74,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image2.avif",
     aboutMe: "High profile Independent Female Model VIP High Class Service in Kalyani Nagar Pune. Professional service provider with discrete companionship and entertainment guaranteed.",
-    metaTitle: "Pooja Hegde – VIP Escort in Kalyani Nagar Pune | Model",
-    metaDescription: "Pooja Hegde offers VIP companion & model services in Kalyani Nagar Pune. Available for corporate events, dinner dates & luxury hotel stays. Real meet guaranteed.",
+    metaTitle: "Pooja Hegde – VIP Escorts in Kalyani Nagar Pune | Top Call Girl",
+    metaDescription: "Pooja Hegde (24) offers VIP companion & escort services in Kalyani Nagar Pune. Available for 5-star hotel visits, dinner dates & real meets. Call: +91 82941 07610.",
+    postalCode: "411006",
+    latitude: 18.5463,
+    longitude: 73.9033,
+    geoRegion: "IN-MH",
+    geoPlacename: "Kalyani Nagar, Pune, Maharashtra, India",
+    geoPosition: "18.5463;73.9033",
   },
 
   // 3. Viman Nagar
@@ -80,8 +99,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image3.avif",
     aboutMe: "100% genuine photos, sweet nature and fully confidential service guaranteed for luxury hotel outcalls and residential visits in Viman Nagar Pune.",
-    metaTitle: "Priya Kulkarni – Call Girl in Viman Nagar Pune | Premium",
-    metaDescription: "Priya Kulkarni is a premium college companion in Viman Nagar Pune near Phoenix Marketcity. 100% genuine photos & confidential hotel/home outcall service.",
+    metaTitle: "Priya Kulkarni – Call Girls in Viman Nagar Pune | College Escort",
+    metaDescription: "Priya Kulkarni (22) is a verified college call girl in Viman Nagar Pune near Phoenix Marketcity. 100% genuine photos & 24/7 hotel outcalls. Call: +91 82941 07610.",
+    postalCode: "411014",
+    latitude: 18.5679,
+    longitude: 73.9143,
+    geoRegion: "IN-MH",
+    geoPlacename: "Viman Nagar, Pune, Maharashtra, India",
+    geoPosition: "18.5679;73.9143",
   },
 
   // 4. Hinjewadi
@@ -99,8 +124,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image4.avif",
     aboutMe: "Sweet, friendly demeanor, instant booking for outcall and incall services with top hospitality in Hinjewadi Pune.",
-    metaTitle: "Sneha Joshi – Escort in Hinjewadi IT Park Pune | Instant",
-    metaDescription: "Sneha Joshi is an independent escort near Hinjewadi Infotech Park Pune. Instant incall & outcall booking for IT executives. Friendly & discreet service.",
+    metaTitle: "Sneha Joshi – Escort Service in Hinjewadi IT Park Pune | 24/7",
+    metaDescription: "Sneha Joshi (24) is an independent call girl near Hinjewadi Infotech Park Phase 1 & 2 Pune. Instant incall & outcall for IT executives. Call: +91 82941 07610.",
+    postalCode: "411057",
+    latitude: 18.5913,
+    longitude: 73.7389,
+    geoRegion: "IN-MH",
+    geoPlacename: "Hinjewadi, Pune, Maharashtra, India",
+    geoPosition: "18.5913;73.7389",
   },
 
   // 5. Baner
@@ -118,8 +149,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image5.avif",
     aboutMe: "High class model companion in Baner Pune. Perfect for business travelers seeking premium companion experience with full privacy.",
-    metaTitle: "Priya Sen – Model Escort in Baner Pune | High Class VIP",
-    metaDescription: "Priya Sen is a high-class model escort on Baner Road Pune. Ideal for business travelers seeking a premium companion experience with complete privacy.",
+    metaTitle: "Priya Sen – Model Escorts in Baner Pune | VIP Call Girl Service",
+    metaDescription: "Priya Sen (21) is a high-profile model escort on Baner Road & High Street Pune. Discreet companionship for luxury hotel stays & dinner dates. Call: +91 82941 07610.",
+    postalCode: "411045",
+    latitude: 18.5590,
+    longitude: 73.7868,
+    geoRegion: "IN-MH",
+    geoPlacename: "Baner, Pune, Maharashtra, India",
+    geoPosition: "18.5590;73.7868",
   },
 
   // 6. Wakad
@@ -137,8 +174,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image6.avif",
     aboutMe: "Gentle and attentive escort partner in Wakad Pune. Fast response on call and WhatsApp for instant hotel visits.",
-    metaTitle: "Kavya Verma – Luxury Escort in Wakad Pune | Fast Booking",
-    metaDescription: "Kavya Verma is a luxury escort & dating partner in Wakad Pune near Expressway. Fast WhatsApp response & instant hotel visit booking available.",
+    metaTitle: "Kavya Verma – Luxury Escort in Wakad Pune | Call Girl 24/7",
+    metaDescription: "Kavya Verma (25) is a luxury escort partner in Wakad near Mumbai-Pune Expressway. Fast WhatsApp response & instant hotel visit booking. Call: +91 82941 07610.",
+    postalCode: "411057",
+    latitude: 18.5987,
+    longitude: 73.7660,
+    geoRegion: "IN-MH",
+    geoPlacename: "Wakad, Pune, Maharashtra, India",
+    geoPosition: "18.5987;73.7660",
   },
 
   // 7. Kothrud
@@ -156,8 +199,14 @@ export const initialProductsData: ProductItem[] = [
     status: "online",
     image: "/images/image7.avif",
     aboutMe: "Quiet and respectful escort in Kothrud Pune. Direct call booking available with 100% privacy assurance.",
-    metaTitle: "Divya Deshmukh – Independent Escort in Kothrud Pune",
-    metaDescription: "Divya Deshmukh is a quiet & respectful independent escort in Kothrud Pune. Direct call booking with 100% privacy assurance for discreet gentlemen.",
+    metaTitle: "Divya Deshmukh – Independent Call Girl in Kothrud Pune | Escort",
+    metaDescription: "Divya Deshmukh (23) is a quiet & respectful independent escort in Kothrud Pune. Direct call booking with 100% privacy assurance. Call: +91 82941 07610.",
+    postalCode: "411038",
+    latitude: 18.5074,
+    longitude: 73.8077,
+    geoRegion: "IN-MH",
+    geoPlacename: "Kothrud, Pune, Maharashtra, India",
+    geoPosition: "18.5074;73.8077",
   },
 
   // 8. Shivajinagar
@@ -175,8 +224,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image8.avif",
     aboutMe: "Attractive and friendly companion in Shivajinagar Pune. Available for evening dates, hotel visits and relaxing companionship.",
-    metaTitle: "Neha Singh – High Profile Call Girl in Shivajinagar Pune",
-    metaDescription: "Neha Singh is an attractive high-profile companion in Shivajinagar Pune. Available for evening dates, luxury hotel visits & long drives across Pune.",
+    metaTitle: "Neha Singh – High Profile Call Girl in Shivajinagar Pune | 24/7",
+    metaDescription: "Neha Singh (22) is an attractive high-profile companion in central Shivajinagar Pune. Available for evening dates, hotel visits & city drives. Call: +91 82941 07610.",
+    postalCode: "411005",
+    latitude: 18.5314,
+    longitude: 73.8446,
+    geoRegion: "IN-MH",
+    geoPlacename: "Shivajinagar, Pune, Maharashtra, India",
+    geoPosition: "18.5314;73.8446",
   },
 
   // 9. Aundh
@@ -194,8 +249,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image9.avif",
     aboutMe: "Beautiful independent girl in Aundh Pune. Polite, punctual and committed to providing a peaceful experience.",
-    metaTitle: "Simran Gill – Young Independent Escort in Aundh Pune",
-    metaDescription: "Simran Gill is a beautiful independent escort in Aundh Pune. Polite, punctual & committed to a glamorous companion experience. Book now via WhatsApp.",
+    metaTitle: "Simran Gill – Young Independent Escort in Aundh Pune | Call Girl",
+    metaDescription: "Simran Gill (24) is a beautiful independent escort in Aundh Pune. Polite, punctual & glamorous companionship. Book 24/7 via WhatsApp: +91 82941 07610.",
+    postalCode: "411007",
+    latitude: 18.5580,
+    longitude: 73.8074,
+    geoRegion: "IN-MH",
+    geoPlacename: "Aundh, Pune, Maharashtra, India",
+    geoPosition: "18.5580;73.8074",
   },
 
   // 10. Magarpatta City
@@ -213,8 +274,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image10.avif",
     aboutMe: "Fun-loving college student escort in Magarpatta Cybercity Pune. Flexible timings, affordable packages, instant WhatsApp chat.",
-    metaTitle: "Aarti Patel – College Escort in Magarpatta City Pune",
-    metaDescription: "Aarti Patel is a fun-loving college escort in Magarpatta Cybercity Hadapsar Pune. Flexible timings, affordable packages & instant WhatsApp booking.",
+    metaTitle: "Aarti Patel – College Escort in Magarpatta City Hadapsar Pune",
+    metaDescription: "Aarti Patel (23) is a fun-loving college escort in Magarpatta Cybercity Hadapsar Pune. Affordable packages & instant hotel outcalls. Call: +91 82941 07610.",
+    postalCode: "411028",
+    latitude: 18.5158,
+    longitude: 73.9272,
+    geoRegion: "IN-MH",
+    geoPlacename: "Magarpatta City, Hadapsar, Pune, Maharashtra, India",
+    geoPosition: "18.5158;73.9272",
   },
 
   // 11. Kharadi
@@ -232,8 +299,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Busy",
     image: "/images/image11.avif",
     aboutMe: "Elegant corporate companion in Kharadi EON IT Park Pune. Professional, discrete and well-mannered.",
-    metaTitle: "Ishita Roy – Corporate VIP Escort in Kharadi Pune | EON",
-    metaDescription: "Ishita Roy is an elegant corporate companion in Kharadi near EON Free Zone Pune. Professional & discreet service for IT executives and business travelers.",
+    metaTitle: "Ishita Roy – Corporate VIP Escort in Kharadi Pune | EON IT Park",
+    metaDescription: "Ishita Roy (22) is an elegant corporate VIP companion in Kharadi near EON Free Zone Pune. Discreet service for executives & travelers. Call: +91 82941 07610.",
+    postalCode: "411014",
+    latitude: 18.5516,
+    longitude: 73.9349,
+    geoRegion: "IN-MH",
+    geoPlacename: "Kharadi, Pune, Maharashtra, India",
+    geoPosition: "18.5516;73.9349",
   },
 
   // 12. FC Road
@@ -251,8 +324,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image12.avif",
     aboutMe: "Charming independent escort on FC Road Pune. Ideal companion for relaxing evenings and luxury hotel stays.",
-    metaTitle: "Meera Joshi – Independent Escort on FC Road Pune",
-    metaDescription: "Meera Joshi is a charming escort near Fergusson College Road Pune. Perfect for cafe dates, city drives & luxury hotel stays. Call or WhatsApp anytime.",
+    metaTitle: "Meera Joshi – Independent Escort on FC Road Pune | Call Girl",
+    metaDescription: "Meera Joshi (25) is a charming companion near Fergusson College Road Pune. Perfect for cafe dates, city drives & luxury hotel stays. Call: +91 82941 07610.",
+    postalCode: "411004",
+    latitude: 18.5246,
+    longitude: 73.8415,
+    geoRegion: "IN-MH",
+    geoPlacename: "Fergusson College Road, Shivajinagar, Pune, Maharashtra, India",
+    geoPosition: "18.5246;73.8415",
   },
 
   // 13. Pune Camp
@@ -270,8 +349,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image13.avif",
     aboutMe: "Sophisticated escort girl in Pune Camp & MG Road. Specially available for luxury 5-star hotel outcalls.",
-    metaTitle: "Shreya Das – 5-Star Hotel Escort in Pune Camp | MG Road",
-    metaDescription: "Shreya Das is a sophisticated escort in Pune Camp & MG Road. Specialises in luxury 5-star hotel outcalls & VIP heritage visits. Discreet & professional.",
+    metaTitle: "Shreya Das – 5-Star Hotel Escort in Pune Camp & MG Road | VIP",
+    metaDescription: "Shreya Das (21) is a sophisticated escort in Pune Camp & MG Road. Specializes in luxury 5-star hotel outcalls & VIP visits. Call: +91 82941 07610.",
+    postalCode: "411001",
+    latitude: 18.5132,
+    longitude: 73.8767,
+    geoRegion: "IN-MH",
+    geoPlacename: "Pune Camp, MG Road, Pune, Maharashtra, India",
+    geoPosition: "18.5132;73.8767",
   },
 
   // 14. Senapati Bapat Road
@@ -290,7 +375,13 @@ export const initialProductsData: ProductItem[] = [
     image: "/images/image14.avif",
     aboutMe: "Glamorous fashion model companion on Senapati Bapat Road Pune. Warm nature, hygienic, and committed to discretion.",
     metaTitle: "Natasha Malik – Model Escort on SB Road Pune | JW Marriott",
-    metaDescription: "Natasha Malik is a glamorous fashion model escort on Senapati Bapat Road near JW Marriott Pune. Warm, hygienic & fully discreet companion service.",
+    metaDescription: "Natasha Malik (23) is a glamorous fashion model escort on Senapati Bapat Road near JW Marriott Pune. Warm, hygienic & discreet service. Call: +91 82941 07610.",
+    postalCode: "411016",
+    latitude: 18.5362,
+    longitude: 73.8302,
+    geoRegion: "IN-MH",
+    geoPlacename: "Senapati Bapat Road, Pune, Maharashtra, India",
+    geoPosition: "18.5362;73.8302",
   },
 
   // 15. Balewadi
@@ -308,8 +399,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image15.avif",
     aboutMe: "Friendly independent girl in Balewadi High Street Pune. Quick response on WhatsApp with direct phone call support.",
-    metaTitle: "Sonal Chauhan – Escort in Balewadi High Street Pune",
-    metaDescription: "Sonal Chauhan is a friendly independent escort in Balewadi High Street Pune. Quick WhatsApp & call response. Available for dinner dates & hotel visits.",
+    metaTitle: "Sonal Chauhan – Escort in Balewadi High Street Pune | Call Girl",
+    metaDescription: "Sonal Chauhan (24) is a friendly independent escort in Balewadi High Street Pune. Quick WhatsApp & call response for dinner dates. Call: +91 82941 07610.",
+    postalCode: "411045",
+    latitude: 18.5752,
+    longitude: 73.7715,
+    geoRegion: "IN-MH",
+    geoPlacename: "Balewadi High Street, Pune, Maharashtra, India",
+    geoPosition: "18.5752;73.7715",
   },
 
   // 16. Bavdhan
@@ -327,8 +424,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image16.avif",
     aboutMe: "Lovely desi college girl in Bavdhan Pune. Sweet conversationalist and attentive companion.",
-    metaTitle: "Nisha Agarwal – Desi College Escort in Bavdhan Pune",
-    metaDescription: "Nisha Agarwal is a lovely desi college girl escort in Bavdhan near Chandani Chowk Pune. Sweet conversationalist & attentive private companion.",
+    metaTitle: "Nisha Agarwal – Desi College Escort in Bavdhan Pune | Call Girl",
+    metaDescription: "Nisha Agarwal (22) is a lovely desi college girl escort in Bavdhan near Chandani Chowk Pune. Sweet conversationalist & private companion. Call: +91 82941 07610.",
+    postalCode: "411021",
+    latitude: 18.5126,
+    longitude: 73.7707,
+    geoRegion: "IN-MH",
+    geoPlacename: "Bavdhan, Chandani Chowk, Pune, Maharashtra, India",
+    geoPosition: "18.5126;73.7707",
   },
 
   // 17. Pimple Saudagar
@@ -346,8 +449,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image17.avif",
     aboutMe: "Mature and caring companion in Pimple Saudagar Pune. Safe, secure, and hassle-free meeting arrangements.",
-    metaTitle: "Tanvi Shah – High Class Escort in Pimple Saudagar PCMC",
-    metaDescription: "Tanvi Shah is a mature high-class escort in Pimple Saudagar Pune (PCMC). Safe, secure & hassle-free meeting arrangements. Call or WhatsApp to book.",
+    metaTitle: "Tanvi Shah – High Class Escort in Pimple Saudagar PCMC Pune",
+    metaDescription: "Tanvi Shah (23) is a mature high-class escort in Pimple Saudagar PCMC Pune. Safe, secure & hassle-free meeting arrangements. Call: +91 82941 07610.",
+    postalCode: "411027",
+    latitude: 18.5987,
+    longitude: 73.7978,
+    geoRegion: "IN-MH",
+    geoPlacename: "Pimple Saudagar, PCMC, Pune, Maharashtra, India",
+    geoPosition: "18.5987;73.7978",
   },
 
   // 18. Pimpri Chinchwad
@@ -365,8 +474,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image18.avif",
     aboutMe: "High profile companion in Pimpri Chinchwad Pune. Available for outstation travels and local weekend stays.",
-    metaTitle: "Maya Deshmukh – VIP Escort in Pimpri Chinchwad Pune",
-    metaDescription: "Maya Deshmukh is a high-profile luxury escort in Pimpri Chinchwad (PCMC) Pune. Available for executive meets & weekend hotel stays. Book via WhatsApp.",
+    metaTitle: "Maya Deshmukh – VIP Escort in Pimpri Chinchwad PCMC Pune",
+    metaDescription: "Maya Deshmukh (24) is a high-profile luxury escort in Pimpri Chinchwad PCMC Pune. Available for executive meets & weekend hotel stays. Call: +91 82941 07610.",
+    postalCode: "411017",
+    latitude: 18.6279,
+    longitude: 73.8009,
+    geoRegion: "IN-MH",
+    geoPlacename: "Pimpri Chinchwad, PCMC, Pune, Maharashtra, India",
+    geoPosition: "18.6279;73.8009",
   },
 
   // 19. Swargate
@@ -384,8 +499,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image19.avif",
     aboutMe: "Elegant companion in Swargate Pune. Top rated verified profile with excellent feedback.",
-    metaTitle: "Kriti Malhotra – High Class Escort in Swargate Pune",
-    metaDescription: "Kriti Malhotra is a top-rated elegant escort near Swargate Pune transit hub. Verified profile with excellent feedback. Instant call & WhatsApp booking.",
+    metaTitle: "Kriti Malhotra – High Class Call Girl in Swargate Pune | Escort",
+    metaDescription: "Kriti Malhotra (22) is a top-rated elegant escort near Swargate Pune transit hub. Verified profile with instant call & WhatsApp booking: +91 82941 07610.",
+    postalCode: "411042",
+    latitude: 18.5018,
+    longitude: 73.8586,
+    geoRegion: "IN-MH",
+    geoPlacename: "Swargate, Pune, Maharashtra, India",
+    geoPosition: "18.5018;73.8586",
   },
 
   // 20. Kondhwa
@@ -403,8 +524,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Offline",
     image: "/images/image20.avif",
     aboutMe: "Polite independent profile in Kondhwa & NIBM Road Pune. Simple booking process via direct phone call.",
-    metaTitle: "Payal Rajput – Independent Escort in Kondhwa NIBM Pune",
-    metaDescription: "Payal Rajput is a polite independent escort in Kondhwa & NIBM Road Pune. Simple and quick booking process via direct phone call. Discreet service.",
+    metaTitle: "Payal Rajput – Independent Escort in Kondhwa NIBM Road Pune",
+    metaDescription: "Payal Rajput (25) is a polite independent escort in Kondhwa & NIBM Road Pune. Simple and quick booking process with 100% privacy. Call: +91 82941 07610.",
+    postalCode: "411048",
+    latitude: 18.4739,
+    longitude: 73.8967,
+    geoRegion: "IN-MH",
+    geoPlacename: "Kondhwa, NIBM Road, Pune, Maharashtra, India",
+    geoPosition: "18.4739;73.8967",
   },
 
   // 21. Fatima Nagar
@@ -422,8 +549,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image21.avif",
     aboutMe: "Friendly companion in Fatima Nagar Wanowrie Pune. 100% real photos, safety first policy and privacy guaranteed.",
-    metaTitle: "Swati Mishra – Call Girl in Fatima Nagar Wanowrie Pune",
-    metaDescription: "Swati Mishra is a high-profile companion in Fatima Nagar & Wanowrie Pune. 100% real photos, safety-first policy and complete privacy guaranteed.",
+    metaTitle: "Swati Mishra – Call Girl in Fatima Nagar Wanowrie Pune | Escort",
+    metaDescription: "Swati Mishra (23) is a high-profile companion in Fatima Nagar & Wanowrie Pune. 100% real photos, safety-first policy and full privacy. Call: +91 82941 07610.",
+    postalCode: "411013",
+    latitude: 18.5039,
+    longitude: 73.8977,
+    geoRegion: "IN-MH",
+    geoPlacename: "Fatima Nagar, Wanowrie, Pune, Maharashtra, India",
+    geoPosition: "18.5039;73.8977",
   },
 
   // 22. Yerwada
@@ -441,8 +574,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image22.avif",
     aboutMe: "Attractive girl available for home and hotel outcall services in Yerwada Pune.",
-    metaTitle: "Rashmi Gautham – Escort in Yerwada Airport Road Pune",
-    metaDescription: "Rashmi Gautham is an attractive independent escort in Yerwada near Airport Road Pune. Available for home & luxury hotel outcall services anytime.",
+    metaTitle: "Rashmi Gautham – Escort in Yerwada Airport Road Pune | Call Girl",
+    metaDescription: "Rashmi Gautham (24) is an attractive independent escort in Yerwada near Airport Road Pune. Available for home & luxury hotel outcalls. Call: +91 82941 07610.",
+    postalCode: "411006",
+    latitude: 18.5529,
+    longitude: 73.8796,
+    geoRegion: "IN-MH",
+    geoPlacename: "Yerwada, Airport Road, Pune, Maharashtra, India",
+    geoPosition: "18.5529;73.8796",
   },
 
   // 23. Pashan
@@ -461,7 +600,13 @@ export const initialProductsData: ProductItem[] = [
     image: "/images/image23.avif",
     aboutMe: "Young college escort near Pashan & Sus Road Pune. Fun, energetic and well-mannered companion for outings.",
     metaTitle: "Deepika Nambiar – College Escort in Pashan Sus Road Pune",
-    metaDescription: "Deepika Nambiar is a fun & energetic college escort near Pashan Lake & Sus Road Pune. Well-mannered companion for outings, dates & hotel visits.",
+    metaDescription: "Deepika Nambiar (22) is a fun & energetic college escort near Pashan Lake & Sus Road Pune. Well-mannered companion for outings & hotel visits. Call: +91 82941 07610.",
+    postalCode: "411021",
+    latitude: 18.5414,
+    longitude: 73.7929,
+    geoRegion: "IN-MH",
+    geoPlacename: "Pashan, Sus Road, Pune, Maharashtra, India",
+    geoPosition: "18.5414;73.7929",
   },
 
   // 24. Mundhwa
@@ -479,8 +624,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image24.avif",
     aboutMe: "Sweet and honest companion in Mundhwa Pune. Direct phone call booking and quick WhatsApp response.",
-    metaTitle: "Shruti Iyer – Verified Escort in Mundhwa Pune | KP Annexe",
-    metaDescription: "Shruti Iyer is a verified sweet companion in Mundhwa near Koregaon Park Annexe Pune. Direct call booking & quick WhatsApp response guaranteed.",
+    metaTitle: "Shruti Iyer – Verified Escort in Mundhwa Koregaon Park Annexe",
+    metaDescription: "Shruti Iyer (23) is a verified sweet companion in Mundhwa near Koregaon Park Annexe Pune. Direct call booking & quick WhatsApp response. Call: +91 82941 07610.",
+    postalCode: "411036",
+    latitude: 18.5367,
+    longitude: 73.9217,
+    geoRegion: "IN-MH",
+    geoPlacename: "Mundhwa, Koregaon Park Annexe, Pune, Maharashtra, India",
+    geoPosition: "18.5367;73.9217",
   },
 
   // 25. Lohegaon
@@ -498,8 +649,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image25.avif",
     aboutMe: "High class model companion for Pune Airport layovers and hotel visits in Lohegaon & Dhanori.",
-    metaTitle: "Trisha Mukherjee – Airport Escort in Lohegaon Pune | VIP",
-    metaDescription: "Trisha Mukherjee is a VIP model escort for Pune Airport layovers & hotel stays in Lohegaon Dhanori. High-class discreet service available 24/7.",
+    metaTitle: "Trisha Mukherjee – Airport Escort in Lohegaon Dhanori Pune | VIP",
+    metaDescription: "Trisha Mukherjee (25) is a VIP model escort for Pune Airport layovers & hotel stays in Lohegaon Dhanori. Discreet 24/7 service. Call: +91 82941 07610.",
+    postalCode: "411047",
+    latitude: 18.5913,
+    longitude: 73.9184,
+    geoRegion: "IN-MH",
+    geoPlacename: "Lohegaon, Dhanori, Pune Airport, Pune, Maharashtra, India",
+    geoPosition: "18.5913;73.9184",
   },
 
   // 26. Katraj
@@ -517,8 +674,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image26.avif",
     aboutMe: "Polite young companion in Katraj Pune. Available for daytime and overnight bookings.",
-    metaTitle: "Aditi Bhatia – Young Escort in Katraj Pune | Bharati Area",
-    metaDescription: "Aditi Bhatia is a polite young independent escort in Katraj near Bharati Vidyapeeth Pune. Available for daytime & overnight bookings via call.",
+    metaTitle: "Aditi Bhatia – Young Escort in Katraj Bharati Vidyapeeth Pune",
+    metaDescription: "Aditi Bhatia (21) is a polite young independent escort in Katraj near Bharati Vidyapeeth Pune. Daytime & overnight bookings available. Call: +91 82941 07610.",
+    postalCode: "411046",
+    latitude: 18.4485,
+    longitude: 73.8588,
+    geoRegion: "IN-MH",
+    geoPlacename: "Katraj, Bharati Vidyapeeth, Pune, Maharashtra, India",
+    geoPosition: "18.4485;73.8588",
   },
 
   // 27. Model Colony
@@ -536,8 +699,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image27.avif",
     aboutMe: "Located in Model Colony Pune. Ideal companion for travelers and executives with prompt service.",
-    metaTitle: "Radhika Merchant – VIP Escort in Model Colony Pune",
-    metaDescription: "Radhika Merchant is a VIP escort & dating partner in Model Colony Shivajinagar Pune. Ideal for executives, fine dining & peaceful private companionship.",
+    metaTitle: "Radhika Merchant – VIP Escort in Model Colony Shivajinagar Pune",
+    metaDescription: "Radhika Merchant (24) is a VIP escort & dating partner in Model Colony Shivajinagar Pune. Ideal for executives & luxury hotel stays. Call: +91 82941 07610.",
+    postalCode: "411016",
+    latitude: 18.5350,
+    longitude: 73.8385,
+    geoRegion: "IN-MH",
+    geoPlacename: "Model Colony, Shivajinagar, Pune, Maharashtra, India",
+    geoPosition: "18.5350;73.8385",
   },
 
   // 28. Prabhat Road
@@ -555,8 +724,14 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image28.avif",
     aboutMe: "Charming independent partner on Prabhat Road Pune. Clean, safe, and professional companion service.",
-    metaTitle: "Jyoti Saxena – Independent Escort on Prabhat Road Pune",
-    metaDescription: "Jyoti Saxena is a charming independent escort on Prabhat Road Deccan Pune. Clean, safe & professional companion service. Call or WhatsApp to book.",
+    metaTitle: "Jyoti Saxena – Independent Escort on Prabhat Road Deccan Pune",
+    metaDescription: "Jyoti Saxena (22) is a charming independent escort on Prabhat Road Deccan Pune. Clean, safe & professional companion service. Call: +91 82941 07610.",
+    postalCode: "411004",
+    latitude: 18.5123,
+    longitude: 73.8370,
+    geoRegion: "IN-MH",
+    geoPlacename: "Prabhat Road, Deccan Gymkhana, Pune, Maharashtra, India",
+    geoPosition: "18.5123;73.8370",
   },
 
   // 29. Deccan Gymkhana
@@ -575,7 +750,13 @@ export const initialProductsData: ProductItem[] = [
     image: "/images/image29.avif",
     aboutMe: "Respectful companion in Deccan Gymkhana Pune. Booking available directly via phone line.",
     metaTitle: "Mansi Joshi – High Profile Escort in Deccan Gymkhana Pune",
-    metaDescription: "Mansi Joshi is a respectful high-profile companion in Deccan Gymkhana Pune. Direct WhatsApp & phone call booking. Discreet & professional service.",
+    metaDescription: "Mansi Joshi (23) is a respectful high-profile companion in Deccan Gymkhana Pune. Direct WhatsApp & phone call booking. Discreet service. Call: +91 82941 07610.",
+    postalCode: "411004",
+    latitude: 18.5167,
+    longitude: 73.8417,
+    geoRegion: "IN-MH",
+    geoPlacename: "Deccan Gymkhana, Pune, Maharashtra, India",
+    geoPosition: "18.5167;73.8417",
   },
 
   // 30. Wagholi
@@ -594,9 +775,16 @@ export const initialProductsData: ProductItem[] = [
     image: "/images/image30.avif",
     aboutMe: "Sweet desi college girl in Wagholi Pune. High quality companion service for home and hotel outcalls.",
     metaTitle: "Sunita Rao – Desi College Escort in Wagholi Nagar Road Pune",
-    metaDescription: "Sunita Rao is a sweet desi college escort in Wagholi on Nagar Road Pune. High-quality home & hotel outcall service. Instant WhatsApp booking available.",
+    metaDescription: "Sunita Rao (22) is a sweet desi college escort in Wagholi on Nagar Road Pune. High-quality home & hotel outcall service. Book via WhatsApp: +91 82941 07610.",
+    postalCode: "412207",
+    latitude: 18.5793,
+    longitude: 73.9809,
+    geoRegion: "IN-MH",
+    geoPlacename: "Wagholi, Nagar Road, Pune, Maharashtra, India",
+    geoPosition: "18.5793;73.9809",
   },
 
+  // 31. Wagholi - Sweeti Rao
   {
     id: "sweeti-rao-pune-wagholi",
     name: "Sweeti Rao",
@@ -611,7 +799,13 @@ export const initialProductsData: ProductItem[] = [
     status: "Available Now",
     image: "/images/image31.avif",
     aboutMe: "Sweeti desi college girl in Wagholi Pune. High quality companion service for home and hotel outcalls.",
-    metaTitle: "Sunita Rao – Desi College Escort in Wagholi Nagar Road Pune",
-    metaDescription: "Sunita Rao is a sweet desi college escort in Wagholi on Nagar Road Pune. High-quality home & hotel outcall service. Instant WhatsApp booking available.",
+    metaTitle: "Sweeti Rao – Independent Call Girl in Wagholi Pune | 24/7 Outcall",
+    metaDescription: "Sweeti Rao (22) is a genuine independent companion in Wagholi near Nagar Road Pune. Available 24/7 for hotel outcalls & private dinner dates. Call: +91 82941 07610.",
+    postalCode: "412207",
+    latitude: 18.5793,
+    longitude: 73.9809,
+    geoRegion: "IN-MH",
+    geoPlacename: "Wagholi, Nagar Road, Pune, Maharashtra, India",
+    geoPosition: "18.5793;73.9809",
   },
 ];

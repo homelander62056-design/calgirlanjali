@@ -9,7 +9,7 @@ export default function FooterPage() {
   return (
     <footer className="w-full bg-[#fdfdfd] text-zinc-600 font-sans border-t border-zinc-100 relative py-12 px-4 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-        
+
         {/* Brand Column */}
         <div className="lg:col-span-1 space-y-4 pr-2">
           {/* Logo */}
@@ -203,12 +203,12 @@ export default function FooterPage() {
       {/* Floating Call & WhatsApp Action Buttons at Bottom Right */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <a
-          href={createWhatsAppLink("Floating Button", "Pune", "918294107610")}
+          href={createWhatsAppLink("Anjali kumari", "Pune", "918294107610")}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() =>
             trackWhatsAppClick({
-              name: "Floating WhatsApp Button",
+              name: "Anjali kumari",
               city: "Pune",
               whatsappNumber: "918294107610",
             })
