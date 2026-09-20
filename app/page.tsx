@@ -289,24 +289,31 @@ export default function Page() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
-              {topSearches.map((item) => (
-                <Link
-                  key={item.name}
-                  href={`/product?city=${encodeURIComponent(item.name)}`}
-                  className="inline-flex items-center gap-2.5 bg-white border border-zinc-200 hover:border-rose-300 rounded-full pl-1.5 pr-4 py-1 text-sm font-semibold text-zinc-800 shadow-2xs hover:shadow-xs transition-all hover:scale-105 cursor-pointer"
-                >
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="w-8 h-8 rounded-full object-cover flex-shrink-0"
-                    onError={(e) => {
-                      e.currentTarget.src = "/images/image1.avif";
-                    }}
-                  />
+              {topSearches.map((item) => {
+                const isLocation = !item.name.includes("Escorts");
+                const targetHref = isLocation
+                  ? `/location/${item.name.toLowerCase().replace(/\s+/g, "-")}`
+                  : `/product?city=${encodeURIComponent(item.name)}`;
 
-                  <span>{item.name}</span>
-                </Link>
-              ))}
+                return (
+                  <Link
+                    key={item.name}
+                    href={targetHref}
+                    className="inline-flex items-center gap-2.5 bg-white border border-zinc-200 hover:border-rose-300 rounded-full pl-1.5 pr-4 py-1 text-sm font-semibold text-zinc-800 shadow-2xs hover:shadow-xs transition-all hover:scale-105 cursor-pointer"
+                  >
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="w-8 h-8 rounded-full object-cover flex-shrink-0"
+                      onError={(e) => {
+                        e.currentTarget.src = "/images/image1.avif";
+                      }}
+                    />
+
+                    <span>{item.name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -353,25 +360,28 @@ export default function Page() {
 
             {/* Location Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto">
-              {serviceAreas.map((cityName) => (
-                <Link
-                  key={cityName}
-                  href={`/product?city=${encodeURIComponent(cityName)}`}
-                  className="bg-white border border-zinc-200/80 hover:border-rose-400 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 shadow-2xs hover:shadow-md transition-all hover:-translate-y-0.5 cursor-pointer group text-center"
-                >
-                  <svg
-                    className="w-5 h-5 text-rose-500 fill-current group-hover:scale-110 transition-transform"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
+              {serviceAreas.map((cityName) => {
+                const slug = cityName.toLowerCase().replace(/\s+/g, "-");
+                return (
+                  <Link
+                    key={cityName}
+                    href={`/location/${slug}`}
+                    className="bg-white border border-zinc-200/80 hover:border-rose-400 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 shadow-2xs hover:shadow-md transition-all hover:-translate-y-0.5 cursor-pointer group text-center"
                   >
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                  </svg>
+                    <svg
+                      className="w-5 h-5 text-rose-500 fill-current group-hover:scale-110 transition-transform"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
 
-                  <span className="text-xs sm:text-sm font-semibold text-zinc-800 group-hover:text-rose-500 transition-colors">
-                    {cityName}
-                  </span>
-                </Link>
-              ))}
+                    <span className="text-xs sm:text-sm font-semibold text-zinc-800 group-hover:text-rose-500 transition-colors">
+                      {cityName}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 

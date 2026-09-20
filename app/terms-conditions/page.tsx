@@ -5,13 +5,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.i
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "Terms and conditions of service, client guidelines, and legal terms for Priya Escort Services in Hyderabad.",
+  description: "Terms and conditions of service, client guidelines, and legal terms for Anjali Escort Service in Pune.",
   alternates: {
     canonical: `${siteUrl}/terms-conditions`,
   },
   openGraph: {
-    title: "Terms & Conditions | Priya Escort Services",
-    description: "Terms and conditions of service, client guidelines, and legal terms for Priya Escort Services in Hyderabad.",
+    title: "Terms & Conditions | Anjali Escort Service Pune",
+    description: "Terms and conditions of service, client guidelines, and legal terms for Anjali Escort Service in Pune.",
     url: `${siteUrl}/terms-conditions`,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms & Conditions | Priya Escort Services",
-    description: "Terms and conditions of service for Priya Escort Services.",
+    title: "Terms & Conditions | Anjali Escort Service Pune",
+    description: "Terms and conditions of service for Anjali Escort Service.",
   },
 };
 

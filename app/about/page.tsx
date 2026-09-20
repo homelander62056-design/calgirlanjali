@@ -5,14 +5,14 @@ import { Metadata } from "next";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
 
 export const metadata: Metadata = {
-  title: "About Us - Elite Companion Network in Pune",
-  description: "Learn about Priya Escort Service, Pune's most distinguished companion network offering 100% verified profiles and discreet executive service.",
+  title: "About Us - Elite Call Girl & Escort Service in Pune",
+  description: "Learn about Anjali Escort Service (CalGirl Anjali), Pune's most distinguished companion network offering 100% verified profiles and discreet executive service.",
   alternates: {
     canonical: `${siteUrl}/about`,
   },
   openGraph: {
-    title: "About Us | Priya Escort Services",
-    description: "Learn about Priya Escort Service, Pune's most distinguished companion network offering 100% verified profiles.",
+    title: "About Us | Anjali Escort Service Pune",
+    description: "Learn about Anjali Escort Service, Pune's most distinguished companion network offering 100% verified call girls and escort profiles.",
     url: `${siteUrl}/about`,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | Priya Escort Services",
+    title: "About Us | Anjali Escort Service Pune",
     description: "Pune's premier platform for elite companionship and discreet executive entertainment.",
   },
 };
@@ -36,10 +36,10 @@ export default function AboutPage() {
             OUR STORY &amp; VISION
           </p>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-900">
-            About <span className="text-[#ff2d55]">Priya Escort</span>
+            About <span className="text-[#ff2d55]">Anjali Escort Service</span>
           </h1>
           <p className="text-sm sm:text-base text-zinc-500 max-w-xl mx-auto pt-1 font-medium">
-            Pune&apos;s premier platform for elite companionship, discreet engagements, and executive entertainment.
+            Pune&apos;s premier platform for elite companionship, verified call girls, discreet engagements, and executive entertainment.
           </p>
         </div>
 
@@ -49,10 +49,10 @@ export default function AboutPage() {
           {/* Welcome Section */}
           <section className="space-y-3 border-b border-zinc-100 pb-6">
             <h2 className="text-xl sm:text-2xl font-extrabold text-[#ff2d55]">
-              Welcome to Priya Escort Service
+              Welcome to Anjali Escort Service Pune
             </h2>
             <p className="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
-              Priya Escort Service stands as Pune&apos;s most distinguished companion network, crafted exclusively for gentlemen seeking refined, charming, and intelligent companions. Established with a commitment to elevate industry standards, we provide seamless access to verified companions for corporate dinners, luxury travel, and private leisure across Pune and PCMC.
+              Anjali Escort Service (CalGirl Anjali) stands as Pune&apos;s most distinguished companion network, crafted exclusively for gentlemen seeking refined, charming, and intelligent companions. Established with a commitment to elevate industry standards, we provide seamless access to verified companions for corporate dinners, luxury travel, and private leisure across Pune and PCMC.
             </p>
           </section>
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
           {/* What Sets Us Apart */}
           <section className="space-y-5 border-b border-zinc-100 pb-6">
             <h2 className="text-xl sm:text-2xl font-extrabold text-[#ff2d55]">
-              Why Choose Priya Escorts?
+              Why Choose Anjali Escorts?
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -100,17 +100,30 @@ export default function HeaderPage() {
           </span>
 
           {/* Locations Hover Card */}
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50 w-[420px]">
-            <div className="bg-white border border-blue-100/80 rounded-3xl p-6 sm:p-7 shadow-2xl grid grid-cols-2 gap-x-8 gap-y-3 text-sm font-medium text-zinc-700">
-              {locationsList.map((loc) => (
+          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block z-50 w-[440px]">
+            <div className="bg-white border border-blue-100/80 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-4">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-2.5 text-xs sm:text-sm font-medium text-zinc-700">
+                {locationsList.map((loc) => {
+                  const slug = loc.toLowerCase().replace(/\s+/g, "-");
+                  return (
+                    <Link
+                      key={loc}
+                      href={`/location/${slug}`}
+                      className="hover:text-blue-600 transition-colors block py-0.5"
+                    >
+                      {loc}
+                    </Link>
+                  );
+                })}
+              </div>
+              <div className="pt-3 border-t border-zinc-100 text-center">
                 <Link
-                  key={loc}
-                  href={`/product?city=${encodeURIComponent(loc)}`}
-                  className="hover:text-blue-600 transition-colors block py-0.5"
+                  href="/location"
+                  className="text-xs font-bold text-blue-600 hover:underline"
                 >
-                  {loc}
+                  View All 25+ Pune Locations →
                 </Link>
-              ))}
+              </div>
             </div>
           </div>
         </div>
@@ -200,17 +213,31 @@ export default function HeaderPage() {
               </svg>
             </button>
             {mobileLocationsOpen && (
-              <div className="pl-4 pt-2 grid grid-cols-2 gap-2 text-xs text-zinc-600">
-                {locationsList.map((loc) => (
+              <div className="pl-4 pt-2 space-y-2">
+                <div className="grid grid-cols-2 gap-2 text-xs text-zinc-600">
+                  {locationsList.map((loc) => {
+                    const slug = loc.toLowerCase().replace(/\s+/g, "-");
+                    return (
+                      <Link
+                        key={loc}
+                        href={`/location/${slug}`}
+                        onClick={() => setMenuOpen(false)}
+                        className="hover:text-blue-600 py-1"
+                      >
+                        {loc}
+                      </Link>
+                    );
+                  })}
+                </div>
+                <div className="pt-2 border-t border-zinc-200">
                   <Link
-                    key={loc}
-                    href={`/product?city=${encodeURIComponent(loc)}`}
+                    href="/location"
                     onClick={() => setMenuOpen(false)}
-                    className="hover:text-blue-600 py-1"
+                    className="text-xs font-bold text-blue-600 hover:underline block"
                   >
-                    {loc}
+                    View All 25+ Locations →
                   </Link>
-                ))}
+                </div>
               </div>
             )}
           </div>

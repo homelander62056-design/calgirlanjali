@@ -6,13 +6,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.i
 
 export const metadata: Metadata = {
   title: "Help & Support - Customer Service & FAQs",
-  description: "Get assistance, technical support, and help with bookings and inquiries at Priya Escort Services in Hyderabad.",
+  description: "Get assistance, booking support, and inquiries help at Anjali Escort Service in Pune.",
   alternates: {
     canonical: `${siteUrl}/helpSupport`,
   },
   openGraph: {
-    title: "Help & Support | Priya Escort Services",
-    description: "Get assistance, technical support, and help with bookings and inquiries at Priya Escort Services in Hyderabad.",
+    title: "Help & Support | Anjali Escort Service Pune",
+    description: "Get assistance, customer care, and help with bookings and inquiries at Anjali Escort Service in Pune.",
     url: `${siteUrl}/helpSupport`,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Help & Support | Priya Escort Services",
-    description: "Get customer assistance and support at Priya Escort Services in Hyderabad.",
+    title: "Help & Support | Anjali Escort Service Pune",
+    description: "Get customer assistance and support at Anjali Escort Service in Pune.",
   },
 };
 

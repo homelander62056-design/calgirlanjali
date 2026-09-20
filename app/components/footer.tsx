@@ -69,7 +69,8 @@ export default function FooterPage() {
           <ul className="space-y-2.5 text-sm">
             <li><Link href="/" className="hover:text-blue-600 transition-colors">Home</Link></li>
             <li><Link href="/product" className="hover:text-blue-600 transition-colors">Our Models</Link></li>
-            <li><Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link></li>
+            <li><Link href="/location" className="hover:text-blue-600 transition-colors">Pune Locations</Link></li>
+            <li><Link href="/blog" className="hover:text-blue-600 transition-colors">Blog & Guides</Link></li>
             <li><Link href="/contact" className="hover:text-blue-600 transition-colors">Contact Us</Link></li>
             <li><Link href="/about" className="hover:text-blue-600 transition-colors">About Us</Link></li>
           </ul>
@@ -81,18 +82,18 @@ export default function FooterPage() {
             POPULAR LOCATIONS
           </h3>
           <ul className="space-y-2.5 text-sm">
-            <li><Link href="/product?city=Koregaon%20Park" className="hover:text-blue-600 transition-colors">Koregaon Park Escorts</Link></li>
-            <li><Link href="/product?city=Kalyani%20Nagar" className="hover:text-blue-600 transition-colors">Kalyani Nagar Call Girls</Link></li>
-            <li><Link href="/product?city=Viman%20Nagar" className="hover:text-blue-600 transition-colors">Viman Nagar Escorts</Link></li>
-            <li><Link href="/product?city=Hinjewadi" className="hover:text-blue-600 transition-colors">Hinjewadi Escorts</Link></li>
-            <li><Link href="/product?city=Baner" className="hover:text-blue-600 transition-colors">Baner Escort Services</Link></li>
-            <li><Link href="/product?city=Wakad" className="hover:text-blue-600 transition-colors">Wakad Escorts</Link></li>
-            <li><Link href="/product?city=Kothrud" className="hover:text-blue-600 transition-colors">Kothrud Escorts</Link></li>
-            <li><Link href="/product?city=Shivajinagar" className="hover:text-blue-600 transition-colors">Shivajinagar Call Girls</Link></li>
-            <li><Link href="/product?city=Aundh" className="hover:text-blue-600 transition-colors">Aundh Escorts</Link></li>
-            <li><Link href="/product?city=Magarpatta%20City" className="hover:text-blue-600 transition-colors">Magarpatta Escorts</Link></li>
-            <li><Link href="/product?city=Kharadi" className="hover:text-blue-600 transition-colors">Kharadi Call Girls</Link></li>
-            <li><Link href="/product?city=FC%20Road" className="hover:text-blue-600 transition-colors">FC Road Escorts</Link></li>
+            <li><Link href="/location/koregaon-park" className="hover:text-blue-600 transition-colors">Koregaon Park Escorts</Link></li>
+            <li><Link href="/location/kalyani-nagar" className="hover:text-blue-600 transition-colors">Kalyani Nagar Call Girls</Link></li>
+            <li><Link href="/location/viman-nagar" className="hover:text-blue-600 transition-colors">Viman Nagar Escorts</Link></li>
+            <li><Link href="/location/hinjewadi" className="hover:text-blue-600 transition-colors">Hinjewadi Escorts</Link></li>
+            <li><Link href="/location/baner" className="hover:text-blue-600 transition-colors">Baner Escort Services</Link></li>
+            <li><Link href="/location/wakad" className="hover:text-blue-600 transition-colors">Wakad Escorts</Link></li>
+            <li><Link href="/location/kothrud" className="hover:text-blue-600 transition-colors">Kothrud Escorts</Link></li>
+            <li><Link href="/location/shivajinagar" className="hover:text-blue-600 transition-colors">Shivajinagar Call Girls</Link></li>
+            <li><Link href="/location/aundh" className="hover:text-blue-600 transition-colors">Aundh Escorts</Link></li>
+            <li><Link href="/location/magarpatta-city" className="hover:text-blue-600 transition-colors">Magarpatta Escorts</Link></li>
+            <li><Link href="/location/kharadi" className="hover:text-blue-600 transition-colors">Kharadi Call Girls</Link></li>
+            <li><Link href="/location/wagholi" className="hover:text-blue-600 transition-colors">Wagholi Escorts</Link></li>
           </ul>
         </div>
 
@@ -102,18 +103,10 @@ export default function FooterPage() {
             MORE AREAS
           </h3>
           <ul className="space-y-2.5 text-sm">
-            <li><Link href="/product?city=Pune%20Camp" className="hover:text-blue-600 transition-colors">Camp Escorts</Link></li>
-            <li><Link href="/product?city=Senapati%20Bapat%20Road" className="hover:text-blue-600 transition-colors">SB Road Escorts</Link></li>
-            <li><Link href="/product?city=Balewadi" className="hover:text-blue-600 transition-colors">Balewadi Call Girls</Link></li>
-            <li><Link href="/product?city=Bavdhan" className="hover:text-blue-600 transition-colors">Bavdhan Escorts</Link></li>
-            <li><Link href="/product?city=Pimple%20Saudagar" className="hover:text-blue-600 transition-colors">Pimple Saudagar Escorts</Link></li>
-            <li><Link href="/product?city=Pimpri%20Chinchwad" className="hover:text-blue-600 transition-colors">PCMC Escorts</Link></li>
-            <li><Link href="/product?city=Swargate" className="hover:text-blue-600 transition-colors">Swargate Escorts</Link></li>
-            <li><Link href="/product?city=Kondhwa" className="hover:text-blue-600 transition-colors">Kondhwa Escorts</Link></li>
-            <li><Link href="/product?city=Fatima%20Nagar" className="hover:text-blue-600 transition-colors">Fatima Nagar Escorts</Link></li>
-            <li><Link href="/product?city=Yerwada" className="hover:text-blue-600 transition-colors">Yerwada Escorts</Link></li>
-            <li><Link href="/product?city=Pashan" className="hover:text-blue-600 transition-colors">Pashan Escorts</Link></li>
-            <li><Link href="/product?city=Lohegaon" className="hover:text-blue-600 transition-colors">Lohegaon Escorts</Link></li>
+            <li><Link href="/location/balewadi" className="hover:text-blue-600 transition-colors">Balewadi Call Girls</Link></li>
+            <li><Link href="/location/pashan" className="hover:text-blue-600 transition-colors">Pashan Escorts</Link></li>
+            <li><Link href="/location/pimpri-chinchwad" className="hover:text-blue-600 transition-colors">PCMC Escorts</Link></li>
+            <li><Link href="/location" className="hover:text-blue-600 transition-colors font-semibold">View All 25+ Areas →</Link></li>
           </ul>
         </div>
 
@@ -145,6 +138,8 @@ export default function FooterPage() {
             <li><Link href="/privacyPolicy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
             <li><Link href="/terms-conditions" className="hover:text-blue-600 transition-colors">Terms & Conditions</Link></li>
             <li><Link href="/disclaimer" className="hover:text-blue-600 transition-colors">Disclaimer</Link></li>
+            <li><Link href="/security" className="hover:text-blue-600 transition-colors">Security & Safety</Link></li>
+            <li><Link href="/helpSupport" className="hover:text-blue-600 transition-colors">Help & Support</Link></li>
           </ul>
         </div>
 
@@ -153,29 +148,31 @@ export default function FooterPage() {
       {/* Our Premium Partners / Pune Locations Section */}
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200 text-center space-y-4">
         <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-blue-600">
-          OUR PREMIUM PARTNERS
+          OUR PREMIUM LOCATIONS
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 text-xs sm:text-sm text-zinc-600 font-medium max-w-5xl mx-auto">
           {[
-            "Pune Escorts",
-            "Koregaon Park Escorts",
-            "Kalyani Nagar Escorts",
-            "Viman Nagar Escorts",
-            "Hinjewadi Escorts",
-            "Baner Escorts",
-            "Wakad Escorts",
-            "Kothrud Escorts",
-            "Shivajinagar Escorts",
-            "Aundh Escorts",
-            "Magarpatta Escorts",
-            "Kharadi Escorts",
-          ].map((location) => (
+            { name: "Koregaon Park Escorts", slug: "koregaon-park" },
+            { name: "Kalyani Nagar Escorts", slug: "kalyani-nagar" },
+            { name: "Viman Nagar Escorts", slug: "viman-nagar" },
+            { name: "Hinjewadi Escorts", slug: "hinjewadi" },
+            { name: "Baner Escorts", slug: "baner" },
+            { name: "Wakad Escorts", slug: "wakad" },
+            { name: "Kothrud Escorts", slug: "kothrud" },
+            { name: "Shivajinagar Escorts", slug: "shivajinagar" },
+            { name: "Aundh Escorts", slug: "aundh" },
+            { name: "Magarpatta Escorts", slug: "magarpatta-city" },
+            { name: "Kharadi Escorts", slug: "kharadi" },
+            { name: "PCMC Escorts", slug: "pimpri-chinchwad" },
+            { name: "Wagholi Escorts", slug: "wagholi" },
+            { name: "Balewadi Escorts", slug: "balewadi" },
+          ].map((item) => (
             <Link
-              key={location}
-              href={`/product?city=${encodeURIComponent(location.replace(" Escorts", ""))}`}
+              key={item.slug}
+              href={`/location/${item.slug}`}
               className="hover:text-blue-600 transition-colors"
             >
-              {location}
+              {item.name}
             </Link>
           ))}
         </div>
@@ -200,36 +197,7 @@ export default function FooterPage() {
         </p>
       </div>
 
-      {/* Floating Call & WhatsApp Action Buttons at Bottom Right */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        <a
-          href={createWhatsAppLink("Anjali kumari", "Pune", "918294107610")}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() =>
-            trackWhatsAppClick({
-              name: "Anjali kumari",
-              city: "Pune",
-              whatsappNumber: "918294107610",
-            })
-          }
-          aria-label="Contact WhatsApp"
-          className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        >
-          <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-          </svg>
-        </a>
-        <a
-          href="tel:+918294107610"
-          aria-label="Call Now"
-          className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-        >
-          <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-          </svg>
-        </a>
-      </div>
+
     </footer>
   );
 }

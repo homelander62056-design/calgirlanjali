@@ -5,14 +5,14 @@ import BlogClient from "./BlogClient";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
 
 export const metadata: Metadata = {
-  title: "Blog & Updates",
-  description: "Read informative articles, practical guides, safety recommendations, and industry updates from Priya Escort Services in Pune.",
+  title: "Blog & Pune Escort Guides | Anjali Escort Service",
+  description: "Read verified guides, safety recommendations, area overviews, and booking tips for call girls and escort services in Pune.",
   alternates: {
     canonical: `${siteUrl}/blog`,
   },
   openGraph: {
-    title: "Blog & Updates | Priya Escort Services",
-    description: "Read informative articles, practical guides, safety recommendations, and industry updates from Priya Escort Services in Pune.",
+    title: "Blog & Pune Escort Guides | Anjali Escort Service",
+    description: "Read verified guides, safety recommendations, area overviews, and booking tips for call girls and escort services in Pune.",
     url: `${siteUrl}/blog`,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog & Updates | Priya Escort Services",
-    description: "Read informative articles, practical guides, and updates from Priya Escort Services in Pune.",
+    title: "Blog & Pune Escort Guides | Anjali Escort Service",
+    description: "Read informative articles, practical guides, and safety tips for escort services in Pune.",
   },
 };
 

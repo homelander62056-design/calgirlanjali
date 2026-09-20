@@ -11,7 +11,7 @@ export default function HomeBelow() {
           Call Girls in Pune — Verified Escort Service 24/7
         </h2>
         <p className="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
-          Looking for trusted <strong className="font-semibold text-zinc-800">call girls in Pune</strong>? Priya Escort Service is Pune&apos;s most reliable <strong className="font-semibold text-zinc-800">escort service</strong> — featuring 60+ verified companions available for incall and outcall across all major Pune locations. Whether you&apos;re searching for <strong className="font-semibold text-zinc-800">escorts in Pune</strong> for a corporate event, dinner date, or private companionship, our handpicked models deliver an experience that exceeds expectations. All profiles are 100% real with verified photos — no fakes, no surprises.
+          Looking for trusted <strong className="font-semibold text-zinc-800">call girls in Pune</strong>? Anjali Escort Service is Pune&apos;s most reliable <strong className="font-semibold text-zinc-800">escort service</strong> — featuring 60+ verified companions available for incall and outcall across all major Pune locations. Whether you&apos;re searching for <strong className="font-semibold text-zinc-800">escorts in Pune</strong> for a corporate event, dinner date, or private companionship, our handpicked models deliver an experience that exceeds expectations. All profiles are 100% real with verified photos — no fakes, no surprises.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ export default function HomeBelow() {
           Pune Escort Service — How to Book
         </h2>
         <p className="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
-          Booking a <strong className="font-semibold text-zinc-800">Pune escort</strong> through Priya Escort Service is simple and completely discreet. Browse our{" "}
+          Booking a <strong className="font-semibold text-zinc-800">Pune escort</strong> through Anjali Escort Service is simple and completely discreet. Browse our{" "}
           <Link href="/product" className="text-[#d62860] hover:underline font-medium">
             verified companions gallery
           </Link>
@@ -125,7 +125,7 @@ export default function HomeBelow() {
           Why Choose Our Pune Escorts?
         </h2>
         <p className="text-sm sm:text-base text-zinc-600 leading-relaxed font-normal">
-          Priya Escort Service stands apart from other <strong className="font-semibold text-zinc-800">escort services in Pune</strong> for three core reasons:{" "}
+          Anjali Escort Service stands apart from other <strong className="font-semibold text-zinc-800">escort services in Pune</strong> for three core reasons:{" "}
           <strong className="font-semibold text-zinc-800">verified profiles</strong> with real photos,{" "}
           <strong className="font-semibold text-zinc-800">100% discretion</strong> with no data sharing, and{" "}
           <strong className="font-semibold text-zinc-800">24/7 availability</strong> across all Pune areas. Our companions are educated, well-groomed professionals — not generic listings. Every interaction, from your first WhatsApp message to the actual meeting, is handled with absolute confidentiality and care.

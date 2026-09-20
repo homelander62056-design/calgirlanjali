@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { initialProductsData } from "./product/productsData";
+import { puneLocations } from "./location/locationsData";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
 
@@ -13,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/product`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/location`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
@@ -67,6 +74,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const locationRoutes: MetadataRoute.Sitemap = puneLocations.map((loc) => ({
+    url: `${siteUrl}/location/${loc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "daily",
+    priority: 0.9,
+  }));
+
   const productRoutes: MetadataRoute.Sitemap = initialProductsData.map((product) => ({
     url: `${siteUrl}/product/${product.id}`,
     lastModified: new Date(),
@@ -74,5 +88,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...productRoutes];
+  return [...staticRoutes, ...locationRoutes, ...productRoutes];
 }
