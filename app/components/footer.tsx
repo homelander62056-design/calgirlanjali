@@ -152,20 +152,31 @@ export default function FooterPage() {
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 text-xs sm:text-sm text-zinc-600 font-medium max-w-5xl mx-auto">
           {[
+            { name: "Pune Railway Station & Bus Stand", slug: "pune-railway-station" },
+            { name: "Swargate Bus Stand", slug: "swargate" },
+            { name: "PCMC Escorts", slug: "pimpri-chinchwad" },
+            { name: "Pimple Saudagar", slug: "pimple-saudagar" },
+            { name: "Hinjewadi IT Park", slug: "hinjewadi" },
+            { name: "Baner Escorts", slug: "baner" },
+            { name: "Wakad Escorts", slug: "wakad" },
             { name: "Koregaon Park Escorts", slug: "koregaon-park" },
             { name: "Kalyani Nagar Escorts", slug: "kalyani-nagar" },
             { name: "Viman Nagar Escorts", slug: "viman-nagar" },
-            { name: "Hinjewadi Escorts", slug: "hinjewadi" },
-            { name: "Baner Escorts", slug: "baner" },
-            { name: "Wakad Escorts", slug: "wakad" },
+            { name: "Kharadi Escorts", slug: "kharadi" },
+            { name: "Hadapsar Escorts", slug: "hadapsar" },
             { name: "Kothrud Escorts", slug: "kothrud" },
             { name: "Shivajinagar Escorts", slug: "shivajinagar" },
             { name: "Aundh Escorts", slug: "aundh" },
+            { name: "Bhosari MIDC", slug: "bhosari" },
+            { name: "Chakan MIDC", slug: "chakan" },
+            { name: "Pune Camp MG Road", slug: "camp-pune" },
+            { name: "Katraj Escorts", slug: "katraj" },
+            { name: "Bavdhan Escorts", slug: "bavdhan" },
+            { name: "Yerwada Escorts", slug: "yerwada" },
             { name: "Magarpatta Escorts", slug: "magarpatta-city" },
-            { name: "Kharadi Escorts", slug: "kharadi" },
-            { name: "PCMC Escorts", slug: "pimpri-chinchwad" },
             { name: "Wagholi Escorts", slug: "wagholi" },
             { name: "Balewadi Escorts", slug: "balewadi" },
+            { name: "Pashan Escorts", slug: "pashan" },
           ].map((item) => (
             <Link
               key={item.slug}
