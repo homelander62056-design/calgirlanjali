@@ -1,22 +1,93 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 import ProductClient from "./product/ProductClient";
 import HomeBelow from "./components/homeBelow";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
+
+export const metadata: Metadata = {
+  title: "Call Girls in Pune | Cal Girl Pune | Anjali Escort Service (24/7 VIP Models)",
+  description: "Pune's #1 trusted escort service & call girls in Pune & PCMC. 100% verified VIP companions, cash on delivery, zero advance & 24/7 hotel outcalls across Hinjewadi, Koregaon Park, Baner & Viman Nagar.",
+  keywords: [
+    "cal girl",
+    "call girl",
+    "cal girl Pune",
+    "call girl Pune",
+    "call girls in Pune",
+    "Pune call girl service",
+    "Pune call girls",
+    "escort service in Pune",
+    "Pune escort service",
+    "Pune escorts",
+    "escorts in Pune",
+    "calgirlanjali",
+    "Anjali escort service",
+    "pune bus stand escort service",
+    "pune railway station escort",
+    "swargate bus stand escort service",
+    "pcmc escort service",
+    "pcmc call girl",
+    "Hinjewadi call girl",
+    "Koregaon Park call girl",
+    "Viman Nagar call girls",
+    "Baner call girl",
+    "Wakad call girl",
+    "independent escorts Pune",
+    "VIP escorts Pune",
+    "Russian escorts in Pune",
+    "cash on delivery call girl Pune",
+  ],
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    title: "Call Girls in Pune | Cal Girl Pune | Anjali Escort Service",
+    description: "Pune's #1 trusted escort service & call girls in Pune & PCMC. 100% verified VIP companions, cash on delivery, zero advance & 24/7 hotel outcalls.",
+    url: siteUrl,
+    siteName: "Anjali Escort Service",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/images/firstpage.avif",
+        width: 1200,
+        height: 630,
+        alt: "Call Girls in Pune - Anjali Escort Service",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Call Girls in Pune | Cal Girl Pune | Anjali Escort Service",
+    description: "Pune's #1 trusted escort service & call girls in Pune & PCMC. 100% verified VIP companions, cash on delivery, zero advance & 24/7 hotel outcalls.",
+    images: ["/images/firstpage.avif"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
 const topSearches = [
-  { name: "Koregaon Park", img: "/images/image1.avif" },
-  { name: "Hinjewadi IT Park", img: "/images/image29.avif" },
-  { name: "Pune Railway Station", img: "/images/image15.avif" },
-  { name: "Swargate Bus Stand", img: "/images/image18.avif" },
-  { name: "PCMC Escorts", img: "/images/image22.avif" },
-  { name: "Kalyani Nagar", img: "/images/image31.avif" },
-  { name: "Viman Nagar", img: "/images/image3.avif" },
-  { name: "Baner High Street", img: "/images/image5.avif" },
-  { name: "Wakad Escorts", img: "/images/image7.avif" },
-  { name: "Russian Escorts", img: "/images/image6.avif" },
-  { name: "Independent Escorts", img: "/images/image4.avif" },
+  { name: "Koregaon Park", img: "/images/image1.avif", slug: "koregaon-park" },
+  { name: "Hinjewadi IT Park", img: "/images/image29.avif", slug: "hinjewadi" },
+  { name: "Pune Railway Station", img: "/images/image15.avif", slug: "pune-railway-station" },
+  { name: "Swargate Bus Stand", img: "/images/image18.avif", slug: "swargate" },
+  { name: "PCMC Escorts", img: "/images/image22.avif", slug: "pimpri-chinchwad" },
+  { name: "Kalyani Nagar", img: "/images/image31.avif", slug: "kalyani-nagar" },
+  { name: "Viman Nagar", img: "/images/image3.avif", slug: "viman-nagar" },
+  { name: "Baner High Street", img: "/images/image5.avif", slug: "baner" },
+  { name: "Wakad Escorts", img: "/images/image7.avif", slug: "wakad" },
+  { name: "Russian Escorts", img: "/images/image6.avif", slug: "koregaon-park" },
+  { name: "Independent Escorts", img: "/images/image4.avif", slug: "kalyani-nagar" },
 ];
 
 const serviceAreas = [
@@ -246,6 +317,7 @@ const seoKeywords = [
   "Pune Escort Service",
   "Call Girls Pune",
   "Call Girl Pune",
+  "Cal girl Pune",
   "Pune Call Girls",
   "Pune Call Girl",
   "Independent Escorts Pune",
@@ -280,10 +352,57 @@ const seoKeywords = [
   "Dinner Date Escorts Pune",
 ];
 
+const homePageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${siteUrl}/#webpage`,
+      "url": siteUrl,
+      "name": "Call Girls in Pune | Cal Girl Pune | Anjali Escort Service",
+      "description": "Pune's premier 24/7 escort service & call girls across Hinjewadi, Koregaon Park, Baner, Viman Nagar, Pune Bus Stand, and PCMC.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteUrl,
+          },
+        ],
+      },
+    },
+    {
+      "@type": "Service",
+      "name": "Call Girls & Escort Service in Pune",
+      "serviceType": "Companion & Escort Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Anjali Escort Service",
+        "telephone": "+91-8294107610",
+        "url": siteUrl,
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Pune",
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": `${siteUrl}/product`,
+        "servicePhone": "+91-8294107610",
+      },
+    },
+  ],
+};
 
 export default function Page() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 font-sans text-zinc-800 overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageJsonLd) }}
+      />
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
@@ -299,13 +418,12 @@ export default function Page() {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 uppercase">
                   <span className="w-4 h-0.5 bg-blue-600 rounded-full" />
-                  <span>Pune&apos;s Finest</span>
+                  <span>Pune&apos;s Finest VIP Companions</span>
                 </div>
 
                 {/* Main Heading */}
                 <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-zinc-900">
                   <span className="block">Cal girl Pune &amp;</span>
-
                   <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent block mt-1">
                     Escort Service in Pune
                   </span>
@@ -313,7 +431,7 @@ export default function Page() {
 
                 {/* Description */}
                 <p className="text-base sm:text-lg text-zinc-600 max-w-xl leading-relaxed">
-                  Pune&apos;s leading 24/7 verified escort service and call girl Pune &amp; PCMC. Discover sophisticated, discreet, and independent VIP companions for hotel outcalls and private meets.
+                  Pune&apos;s leading 24/7 verified escort service and call girl Pune &amp; PCMC. Discover sophisticated, discreet, and independent VIP companions for hotel outcalls and private meets with zero upfront fees.
                 </p>
 
                 {/* Buttons */}
@@ -323,7 +441,6 @@ export default function Page() {
                     className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold text-xs sm:text-sm tracking-wider uppercase px-7 py-3.5 rounded-2xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>View Collection</span>
-
                     <svg
                       className="w-4 h-4"
                       fill="none"
@@ -360,7 +477,7 @@ export default function Page() {
 
                   <div>
                     <div className="text-2xl sm:text-3xl font-extrabold text-zinc-900">
-                      150+
+                      1500+
                     </div>
                     <div className="text-xs text-zinc-500 font-medium mt-0.5">
                       Happy Clients
@@ -383,11 +500,11 @@ export default function Page() {
                 <div className="relative w-full max-w-md h-[400px] sm:h-[480px] rounded-3xl overflow-hidden border border-zinc-200 shadow-2xl shadow-blue-900/10 bg-gray-100 group">
                   <img
                     src="/images/firstpage.avif"
-                    alt="Featured Pune companion"
+                    alt="Featured Pune call girls and escort companion"
+                    width={800}
+                    height={960}
+                    loading="eager"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    onError={(e) => {
-                      e.currentTarget.src = "/images/image1.avif";
-                    }}
                   />
 
                   {/* Image Overlay */}
@@ -396,115 +513,97 @@ export default function Page() {
                   {/* Featured Badge */}
                   <div className="absolute bottom-4 left-4 px-4 py-2 bg-black/70 backdrop-blur-md rounded-2xl border border-blue-500/30 flex items-center gap-2.5 shadow-lg">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-
                     <span className="text-xs font-bold text-amber-300 tracking-wider uppercase">
-                      Featured:
-                    </span>
-
-                    <span className="text-sm font-extrabold text-cyan-300">
-                      Anjali
+                      100% Real &amp; Verified
                     </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
 
-          {/* Top Searches */}
-          <div className="pt-10 space-y-4 max-w-4xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-widest text-zinc-400">
-              TOP SEARCHES
-            </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              {topSearches.map((item) => {
-                const isLocation = !item.name.includes("Escorts");
-                const targetHref = isLocation
-                  ? `/location/${item.name.toLowerCase().replace(/\s+/g, "-")}`
-                  : `/product?city=${encodeURIComponent(item.name)}`;
-
-                return (
-                  <Link
-                    key={item.name}
-                    href={targetHref}
-                    className="inline-flex items-center gap-2.5 bg-white border border-zinc-200 hover:border-rose-300 rounded-full pl-1.5 pr-4 py-1 text-sm font-semibold text-zinc-800 shadow-2xs hover:shadow-xs transition-all hover:scale-105 cursor-pointer"
-                  >
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className="w-8 h-8 rounded-full object-cover flex-shrink-0"
-                      onError={(e) => {
-                        e.currentTarget.src = "/images/image1.avif";
-                      }}
-                    />
-
-                    <span>{item.name}</span>
-                  </Link>
-                );
-              })}
+        {/* Top Searches / Localities Carousel */}
+        <section className="px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto my-6">
+          <div className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg sm:text-xl font-bold text-zinc-900 flex items-center gap-2">
+                <span>🔥</span>
+                Popular Searches in Pune
+              </h2>
+              <Link
+                href="/location"
+                className="text-xs font-bold text-blue-600 hover:underline"
+              >
+                View All Locations →
+              </Link>
             </div>
-          </div>
 
-          {/* Our Collection */}
-          <div className="pt-10 text-center space-y-1">
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
-              OUR COLLECTION
-            </p>
-
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-blue-600">
-              Featured Models
-            </h2>
-
-            <p className="text-sm text-zinc-500 pt-1">
-              Browse premium companion profiles across Pune
-            </p>
+            <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-none no-scrollbar snap-x">
+              {topSearches.map((search) => (
+                <Link
+                  key={search.name}
+                  href={`/location/${search.slug}`}
+                  className="flex-shrink-0 w-36 sm:w-44 group snap-start block"
+                >
+                  <div className="relative h-44 sm:h-52 rounded-2xl overflow-hidden border border-zinc-200 shadow-sm bg-zinc-100 mb-2">
+                    <img
+                      src={search.img}
+                      alt={`${search.name} call girls and escorts`}
+                      width={176}
+                      height={208}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+                    <span className="absolute bottom-2.5 left-2.5 right-2.5 text-xs font-bold text-white leading-tight drop-shadow-md">
+                      {search.name}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* Models Listing */}
-        <div className="py-4">
+        {/* Product Component - Real interactive listings */}
+        <section className="py-8">
           <ProductClient />
-        </div>
+        </section>
 
-        {/* Service Areas */}
-        <section className="py-10 px-4 sm:px-8 max-w-6xl mx-auto space-y-5">
-          <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xs border border-zinc-200 text-center space-y-6">
-            {/* Header */}
-            <div className="space-y-1.5 text-center">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#ff2d55]">
-                SERVICE AREAS
+        {/* Popular Areas Section */}
+        <section className="px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto my-12 space-y-12">
+          <div className="space-y-6">
+            <div className="text-center space-y-2">
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+                PUNE LOCALITIES &amp; HUBS
               </p>
-
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-zinc-900 tracking-tight">
-                Locations We{" "}
-                <span className="text-[#ff2d55]">Serve</span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">
+                Popular Areas for Call Girls in Pune
               </h2>
-
-              <p className="text-sm sm:text-base text-zinc-500 max-w-xl mx-auto pt-0.5 font-medium">
-                Explore escort services and companion listings across popular
-                locations in Pune and PCMC.
+              <p className="text-sm text-zinc-500 max-w-xl mx-auto">
+                Select your area to view verified independent companions near your hotel or residence.
               </p>
             </div>
 
-            {/* Location Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
               {serviceAreas.map((cityName) => {
                 const slug = cityName.toLowerCase().replace(/\s+/g, "-");
                 return (
                   <Link
                     key={cityName}
                     href={`/location/${slug}`}
-                    className="bg-white border border-zinc-200/80 hover:border-rose-400 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 shadow-2xs hover:shadow-md transition-all hover:-translate-y-0.5 cursor-pointer group text-center"
+                    className="bg-white rounded-2xl p-4 border border-zinc-200 shadow-2xs hover:shadow-md hover:border-blue-500 hover:-translate-y-0.5 transition-all flex items-center gap-2.5 group cursor-pointer"
                   >
                     <svg
-                      className="w-5 h-5 text-rose-500 fill-current group-hover:scale-110 transition-transform"
+                      className="w-5 h-5 text-blue-500 fill-current group-hover:scale-110 transition-transform flex-shrink-0"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                     >
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                     </svg>
 
-                    <span className="text-xs sm:text-sm font-semibold text-zinc-800 group-hover:text-rose-500 transition-colors">
+                    <span className="text-xs sm:text-sm font-semibold text-zinc-800 group-hover:text-blue-600 transition-colors">
                       {cityName}
                     </span>
                   </Link>
@@ -514,75 +613,70 @@ export default function Page() {
           </div>
 
           {/* Service Categories */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/product" className="block">
-              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-rose-500 transition-all cursor-pointer">
-                <h3 className="text-xl font-black text-rose-500 flex items-center justify-center gap-2">
-                  <span className="text-xl">👄</span>
+              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-blue-500 transition-all cursor-pointer">
+                <h3 className="text-lg font-black text-blue-600 flex items-center justify-center gap-2">
+                  <span>👄</span>
                   Call Girls Pune
                 </h3>
               </div>
             </Link>
 
             <Link href="/product" className="block">
-              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-rose-500 transition-all cursor-pointer">
-                <h3 className="text-xl font-black text-rose-500 flex items-center justify-center gap-2">
-                  <span className="text-xl">🧘</span>
-                  Massages Pune
+              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-blue-500 transition-all cursor-pointer">
+                <h3 className="text-lg font-black text-blue-600 flex items-center justify-center gap-2">
+                  <span>💎</span>
+                  VIP Escorts Pune
                 </h3>
               </div>
             </Link>
 
             <Link href="/product" className="block">
-              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-rose-500 transition-all cursor-pointer">
-                <h3 className="text-rose-500 font-black text-xl flex items-center justify-center gap-2">
-                  <span className="text-xl">🥸</span>
-                  Male Escorts Pune
+              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-blue-500 transition-all cursor-pointer">
+                <h3 className="text-lg font-black text-blue-600 flex items-center justify-center gap-2">
+                  <span>💃</span>
+                  Russian Escorts Pune
                 </h3>
               </div>
             </Link>
 
             <Link href="/product" className="block">
-              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-rose-500 transition-all cursor-pointer">
-                <h3 className="text-rose-500 font-black text-xl flex items-center justify-center gap-2">
-                  <span>Transgender Companions Pune</span>
+              <div className="bg-white rounded-2xl p-5 shadow-xs border border-zinc-200 text-center hover:border-blue-500 transition-all cursor-pointer">
+                <h3 className="text-lg font-black text-blue-600 flex items-center justify-center gap-2">
+                  <span>🎓</span>
+                  College Girls Pune
                 </h3>
               </div>
             </Link>
           </div>
 
           {/* SEO Content Section */}
-          <section className="bg-white rounded-3xl p-6 sm:p-10 border border-zinc-200">
-            <div className="max-w-4xl mx-auto">
-              <p className="text-xs font-bold uppercase tracking-widest text-rose-500 text-center">
-                PUNE ESCORT SERVICES
+          <section className="bg-white rounded-3xl p-6 sm:p-10 border border-zinc-200 shadow-xs">
+            <div className="max-w-4xl mx-auto space-y-4 text-center">
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+                PUNE ESCORT SERVICES &amp; COMPANIONS
               </p>
 
-              <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-zinc-900 text-center">
-                Escort Services and Companions in Pune
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900">
+                Escort Services and Call Girls Across Pune &amp; PCMC
               </h2>
 
-              <p className="mt-5 text-sm sm:text-base text-zinc-600 leading-relaxed text-center">
-                Find premium escort services and companion profiles in Pune
-                and nearby areas. Our listings cover popular locations
-                including Koregaon Park, Kalyani Nagar, Viman Nagar, Baner,
-                Hinjewadi, Wakad, Kharadi and other areas across Pune and PCMC.
+              <p className="text-sm sm:text-base text-zinc-600 leading-relaxed">
+                Find premium escort services and companion profiles in Pune and nearby areas. Our listings cover popular locations including Koregaon Park, Kalyani Nagar, Viman Nagar, Baner, Hinjewadi, Wakad, Kharadi, PCMC, Pune Railway Station, and Swargate.
               </p>
 
-              <p className="mt-4 text-sm sm:text-base text-zinc-600 leading-relaxed text-center">
-                Browse available profiles, explore different companion
-                categories and use the location links above to find listings
-                relevant to your preferred area. Each profile can be viewed
-                through the collection section.
+              <p className="text-sm sm:text-base text-zinc-600 leading-relaxed">
+                Browse available profiles, explore different companion categories and use the location links above to find listings relevant to your preferred area. Each profile is 100% verified with direct phone and WhatsApp booking.
               </p>
 
-              {/* SEO Keyword Tags */}
-              <div className="mt-7 flex flex-wrap justify-center gap-2">
+              {/* SEO Keyword Tags with Real Links */}
+              <div className="pt-4 flex flex-wrap justify-center gap-2">
                 {seoKeywords.map((keyword) => (
                   <Link
                     key={keyword}
                     href="/product"
-                    className="px-4 py-2 rounded-full bg-rose-50 text-rose-600 text-sm font-medium border border-rose-100 hover:bg-rose-100 transition-colors"
+                    className="px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-medium border border-blue-100 hover:bg-blue-100 transition-colors"
                   >
                     {keyword}
                   </Link>
@@ -592,7 +686,7 @@ export default function Page() {
           </section>
         </section>
 
-        {/* Detailed Information */}
+        {/* Detailed Information & In-Depth Local Content */}
         <div className="bg-white text-zinc-800 border-t border-zinc-200">
           <HomeBelow />
         </div>

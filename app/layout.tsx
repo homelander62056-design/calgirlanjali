@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#d62860",
+  themeColor: "#2563eb",
   width: "device-width",
   initialScale: 1,
 };
@@ -24,15 +24,16 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.i
 
 export const metadata: Metadata = {
   title: {
-    default: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
+    default: "Call Girls in Pune | Anjali Escort Service | 24/7 Pune & PCMC Escorts",
     template: "%s | Anjali Escort Service",
   },
-  description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
-  authors: [{ name: "Anjali Escort Service" }],
+  description: "Anjali Escort Service provides 100% verified call girls and independent escort services in Pune & PCMC. 24/7 Hotel outcall, zero advance, 100% Cash on Delivery & direct WhatsApp booking.",
+  authors: [{ name: "Anjali Escort Service", url: siteUrl }],
   keywords: [
-    // Top Pune Core Keywords
+    // Top Core Pune Queries
     "call girl",
     "cal girl",
+    "cal girl Pune",
     "call girl Pune",
     "call girls in Pune",
     "Pune call girl service",
@@ -300,7 +301,7 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Cal girl  Pune | Anjali Escort Service | Pune & PCMC Escorts",
+    title: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
     description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
     url: siteUrl,
     siteName: "Anjali Escort Service",
@@ -332,6 +333,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Pune, Maharashtra, India",
+    "geo.position": "18.5204;73.8567",
+    "ICBM": "18.5204, 73.8567",
+    "coverage": "Pune, Maharashtra, India",
+    "distribution": "Global",
+    "rating": "General",
+    "target": "all",
+  },
 };
 
 const jsonLd = {
@@ -342,7 +353,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       "url": siteUrl,
       "name": "Anjali Escort Service",
-      "alternateName": ["CalGirl Anjali", "Anjali Pune Escorts", "Call Girl Pune"],
+      "alternateName": ["CalGirl Anjali", "Anjali Pune Escorts", "Call Girl Pune", "Cal girl Pune"],
       "description": "Premier Escort Service and Call Girls in Pune & PCMC. 100% verified independent companions available 24/7.",
       "publisher": {
         "@id": `${siteUrl}/#organization`,
@@ -493,6 +504,14 @@ const jsonLd = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Absolutely. We maintain strict discretion and client privacy. No personal data is shared or retained.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to pay any advance before meet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! Anjali Escort Service follows a strict Zero Advance policy. You pay 100% Cash on Delivery (COD) directly when your chosen companion arrives at your location.",
           },
         },
       ],

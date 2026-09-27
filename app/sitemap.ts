@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { initialProductsData } from "./product/productsData";
 import { puneLocations } from "./location/locationsData";
+import { blogPosts } from "./blog/blogData";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
 
@@ -16,13 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/product`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${siteUrl}/location`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     {
       url: `${siteUrl}/contact`,
@@ -34,12 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
@@ -85,8 +86,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/product/${product.id}`,
     lastModified: new Date(),
     changeFrequency: "daily",
+    priority: 0.85,
+  }));
+
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${siteUrl}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...locationRoutes, ...productRoutes];
+  return [...staticRoutes, ...locationRoutes, ...productRoutes, ...blogRoutes];
 }

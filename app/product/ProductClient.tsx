@@ -225,7 +225,7 @@ function ProductContent() {
                   <Link href={`/product/${product.id}`} className="block relative w-full aspect-[4/4] sm:aspect-[4/5] overflow-hidden bg-zinc-100 cursor-pointer z-10">
                     <img
                       src={modelImg}
-                      alt={product.name}
+                      alt={`${product.name} - Cal Girl Pune & Escort in ${product.city}`}
                       className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                       onError={(e) => {
                         e.currentTarget.src = fallbackImg;
