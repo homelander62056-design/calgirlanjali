@@ -291,26 +291,35 @@ export const metadata: Metadata = {
   creator: "Anjali Escort Service",
   publisher: "Anjali Escort Service",
   icons: {
-    icon: [{ url: "/icon.png", type: "image/png" }],
-    shortcut: ["/icon.png"],
-    apple: [{ url: "/icon.png", type: "image/png" }],
+    icon: [{ url: "/images/logo.png", type: "image/png" }],
+    shortcut: ["/images/logo.png"],
+    apple: [{ url: "/images/logo.png", type: "image/png" }],
   },
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
-    description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified profiles and contact us 24/7.",
+    title: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
+    description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
     url: siteUrl,
     siteName: "Anjali Escort Service",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/images/firstpage.avif",
+        width: 1200,
+        height: 630,
+        alt: "Call Girls in Pune - Anjali Escort Service",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
-    description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified profiles and contact us 24/7.",
+    title: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
+    description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
+    images: ["/images/firstpage.avif"],
   },
   robots: {
     index: true,
