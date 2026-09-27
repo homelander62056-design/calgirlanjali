@@ -8,7 +8,10 @@ export interface WhatsAppTrackData {
  * Generates a clean, encoded WhatsApp direct chat link for CalGirl Anjali.
  */
 export function createWhatsAppLink(name?: string, city?: string, whatsappNumber?: string): string {
-  const number = (whatsappNumber || "918294107610").replace(/[^+\d]/g, "");
+  let number = (whatsappNumber || "918294107610").replace(/\D/g, "");
+  if (number.length === 10) {
+    number = `91${number}`;
+  }
   const profileName = name || "Companion";
   const profileCity = city ? ` in ${city}` : "";
   const text = encodeURIComponent(`Hi, I am interested in booking ${profileName}${profileCity} via calgirlanjali`);

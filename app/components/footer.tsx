@@ -217,7 +217,7 @@ export default function FooterPage() {
           rel="noopener noreferrer"
           onClick={() =>
             trackWhatsAppClick({
-              name: "Floating WhatsApp Button",
+              name: "Anjali",
               city: "Pune",
               whatsappNumber: "918294107610",
             })
