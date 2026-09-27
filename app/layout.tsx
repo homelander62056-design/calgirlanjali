@@ -24,10 +24,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.i
 
 export const metadata: Metadata = {
   title: {
-    default: "Anjali Escort Service | Premium Escorts in Pune & PCMC",
+    default: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
     template: "%s | Anjali Escort Service",
   },
-  description: "Anjali Escort Service provides professional, elegant, and discreet escort services in Pune. Explore verified call girls, VIP models, and contact us 24/7.",
+  description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
   authors: [{ name: "Anjali Escort Service" }],
   keywords: [
     // Top Pune Core Keywords

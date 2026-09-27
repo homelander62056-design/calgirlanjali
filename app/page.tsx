@@ -303,19 +303,17 @@ export default function Page() {
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-zinc-900">
-                  <span className="block">Make Every</span>
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-zinc-900">
+                  <span className="block">Call Girls in Pune &amp;</span>
 
                   <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent block mt-1">
-                    Night Special
+                    Escort Service in Pune
                   </span>
                 </h1>
 
                 {/* Description */}
                 <p className="text-base sm:text-lg text-zinc-600 max-w-xl leading-relaxed">
-                  Explore premium escort services and companion profiles across
-                  Pune. Discover sophisticated, discreet and independent
-                  companions available across popular Pune locations.
+                  Pune&apos;s leading 24/7 verified escort service and call girls in Pune &amp; PCMC. Discover sophisticated, discreet, and independent VIP companions for hotel outcalls and private meets.
                 </p>
 
                 {/* Buttons */}
