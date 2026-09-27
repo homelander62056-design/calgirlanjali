@@ -300,7 +300,7 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Call Girls in Pune | Anjali Escort Service | Pune & PCMC Escorts",
+    title: "Cal girl  Pune | Anjali Escort Service | Pune & PCMC Escorts",
     description: "Anjali Escort Service provides professional, elegant, and discreet escort services and verified call girls in Pune & PCMC. 100% Cash on delivery & 24/7 WhatsApp booking.",
     url: siteUrl,
     siteName: "Anjali Escort Service",

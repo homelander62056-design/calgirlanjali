@@ -402,7 +402,7 @@ export default function Page() {
                     </span>
 
                     <span className="text-sm font-extrabold text-cyan-300">
-                      Anjali Pawar
+                      Anjali
                     </span>
                   </div>
                 </div>
