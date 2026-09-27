@@ -264,7 +264,7 @@ const seoKeywords = [
   "Genuine Call Girl in Pune",
   "Verified Pune Escorts",
   "Verified Call Girls Pune",
-  "Cheap Call Girls in Pune",
+  "Cheap Cal girl Pune",
   "Affordable Escorts Pune",
   "Luxury Escorts Pune",
   "High Profile Escorts Pune",
@@ -304,7 +304,7 @@ export default function Page() {
 
                 {/* Main Heading */}
                 <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-zinc-900">
-                  <span className="block">Call Girls in Pune &amp;</span>
+                  <span className="block">Cal girl Pune &amp;</span>
 
                   <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent block mt-1">
                     Escort Service in Pune
@@ -313,7 +313,7 @@ export default function Page() {
 
                 {/* Description */}
                 <p className="text-base sm:text-lg text-zinc-600 max-w-xl leading-relaxed">
-                  Pune&apos;s leading 24/7 verified escort service and call girls in Pune &amp; PCMC. Discover sophisticated, discreet, and independent VIP companions for hotel outcalls and private meets.
+                  Pune&apos;s leading 24/7 verified escort service and call girl Pune &amp; PCMC. Discover sophisticated, discreet, and independent VIP companions for hotel outcalls and private meets.
                 </p>
 
                 {/* Buttons */}

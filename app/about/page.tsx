@@ -29,7 +29,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col justify-between bg-white text-zinc-800 font-sans">
       <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-8 w-full flex-1">
-        
+
         {/* Header Above Card */}
         <div className="text-center space-y-2 mb-4">
           <p className="text-xs font-bold uppercase tracking-widest text-[#ff2d55]">
@@ -45,7 +45,7 @@ export default function AboutPage() {
 
         {/* Content Container Card */}
         <div className="bg-white border border-pink-200/80 rounded-3xl p-6 sm:p-10 shadow-xs space-y-8">
-          
+
           {/* Welcome Section */}
           <section className="space-y-3 border-b border-zinc-100 pb-6">
             <h2 className="text-xl sm:text-2xl font-extrabold text-[#ff2d55]">
