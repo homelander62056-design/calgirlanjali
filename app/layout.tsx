@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import HeaderPage from "./components/header";
 import FooterPage from "./components/footer";
@@ -21,6 +22,8 @@ export const viewport: Viewport = {
 };
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.calgirlanjali.in";
+const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-E7XBCDW67L";
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "";
 
 export const metadata: Metadata = {
   title: {
@@ -333,6 +336,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: googleVerification || undefined,
+  },
   other: {
     "geo.region": "IN-MH",
     "geo.placename": "Pune, Maharashtra, India",
@@ -534,6 +540,24 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body className="min-h-full flex flex-col justify-between bg-white text-zinc-800 font-sans">
         <HeaderPage />
